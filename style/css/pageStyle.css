@@ -1,0 +1,669 @@
+.mui-table-view-cell:after {
+  right: 15px;
+}
+.mui-table-view:after {
+  left: 15px;
+  right: 15px;
+}
+.zf_menu {
+  position: fixed;
+  z-index: 20;
+  top: 64px;
+  width: 100%;
+  height: auto;
+  background-color: #FFFFFF;
+  font-size: 0;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+.zf_menu .zf_title {
+  height: 42px;
+  line-height: 42px;
+  font-family: PingFangSC-Semibold;
+  font-size: 30px;
+  font-weight: bold;
+  color: #222222;
+  letter-spacing: 0.1px;
+}
+.zf_menu .title_info {
+  height: 21px;
+  line-height: 21px;
+  font-family: PingFangSC-Medium;
+  font-size: 15px;
+  color: #555555;
+  letter-spacing: 0.05px;
+  margin-top: 9px;
+}
+.card_info {
+  width: auto;
+  height: 107px;
+  margin: 10px 15px 0;
+  background: #FFFFFF;
+  border-radius: 8px;
+  position: relative;
+  color: #222;
+  font-family: PingFangSC-Regular;
+}
+.card_info .card_text {
+  width: 100%;
+  height: 38px;
+  line-height: 22px;
+  position: relative;
+  top: 12px;
+  padding-top: 2px;
+  padding-left: 58px;
+  color: #222;
+}
+.card_info .card_text h3 {
+  font-size: 15px;
+  letter-spacing: 0.05px;
+}
+.card_info .card_text p {
+  font-size: 13px;
+  letter-spacing: 0.04px;
+}
+.card_info .gh_bank::before {
+  content: '';
+  background: url('../../images/gongshangyinhang.png') no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: -11px;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  margin: 11px;
+}
+.card_info .js_bank::before {
+  content: '';
+  background: url('../../images/jiansheyinhang2x.png') no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: -11px;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  margin: 11px;
+}
+.card_info .bj_bank::before {
+  content: '';
+  background: url('../../images/beijingyinhang2x.png') no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: -11px;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  margin: 11px;
+}
+.card_info .cardh {
+  font-size: 15px;
+  letter-spacing: 0.05px;
+  position: absolute;
+  right: 14.5px;
+  bottom: 13px;
+  z-index: 9999;
+}
+.card_gh::after {
+  content: '';
+  background: url('../../images/gongshang@2x.png') no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 123px;
+  height: 107px;
+}
+.card_js::after {
+  content: '';
+  background: url('../../images/jianshe@2x.png') no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 123px;
+  height: 107px;
+}
+.card_bj::after {
+  content: '';
+  background: url('../../images/beijing@2x.png') no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 123px;
+  height: 107px;
+}
+.bank_panle {
+  width: auto;
+  height: 124.5px;
+  margin: 10px 15px;
+  background: #FFF;
+  border-radius: 8px;
+  border: 1px solid #DEDEDF;
+  color: #222;
+}
+.bank_panle .bank_title {
+  line-height: 28.5px;
+  font-size: 12px;
+  color: #FFF;
+  padding-left: 8.5px;
+  background: #4C585C;
+  border-radius: 7px 7px 0 0;
+}
+.bank_panle .bank_xe {
+  padding: 18px 11.5px 0 15.5px;
+  font-size: 15px;
+  color: #343434;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-group {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding: 0 10px;
+}
+.btn-group .d_btn {
+  width: 100%;
+  font-size: 16px;
+  display: block;
+  margin-top: 7px;
+  line-height: 48px;
+  height: 48px;
+  background: #FFF;
+  border: none;
+}
+.btn-group .d_btn:first-child {
+  color: #E51E43;
+}
+.sq_card {
+  width: auto;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #B9CBFB;
+  letter-spacing: 0.05px;
+}
+.add_btn {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  padding: 0 54px;
+}
+.add_btn .mui-btn {
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  border: 0;
+  background: #E7E7E7;
+  font-size: 15px;
+  color: #555555;
+  border-radius: 30px;
+  letter-spacing: 0.05px;
+}
+.zf_psw {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.zf_psw li {
+  position: relative;
+  width: 43.75px;
+  height: 43.75px;
+  line-height: 43.75px;
+  font-size: 15px;
+  text-align: center;
+}
+.zf_psw li::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background-color: #c8c7cc;
+  /* 如果不用 background-color, 使用 border-top:1px solid blue; */
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+.msg_ok {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -70px;
+  width: 144px;
+  height: 63.5px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  text-align: center;
+}
+.msg_ok .msg_icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 11px;
+}
+.msg_ok .msg_text {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #fff;
+  margin-top: -5px;
+}
+.wj_psw {
+  float: right;
+  height: 16.5;
+  line-height: 16.5px;
+  margin-top: 13px;
+  margin-right: 11px;
+  font-size: 12px;
+  color: #F24F3E;
+  letter-spacing: 0.04px;
+}
+.syt_title {
+  height: 42px;
+  line-height: 42px;
+  font-family: PingFangSC-Semibold;
+  font-size: 30px;
+  font-weight: bold;
+  color: #222222;
+  letter-spacing: 0.1px;
+  margin-top: 10px;
+}
+.syt_dd {
+  margin-top: 22.5px;
+}
+.syt_dd .syt1 {
+  display: flex;
+  justify-content: space-between;
+  height: 21px;
+  line-height: 21px;
+  font-family: PingFangSC-Regular;
+}
+.syt_dd .syt1 .dd_title {
+  font-size: 14px;
+  color: #555;
+  letter-spacing: 0.05px;
+}
+.syt_dd .syt1 .dd_code {
+  opacity: 0.89;
+  font-size: 14px;
+  color: #555555;
+  letter-spacing: 0.05px;
+}
+.syt_dd .syt1 .zf_title {
+  font-size: 15px;
+  color: #222;
+  letter-spacing: 0.05px;
+}
+.syt_dd .syt1 .zf_money {
+  font-family: PingFangSC-Semibold;
+  font-size: 18px;
+  color: #F24F3E;
+  letter-spacing: 0.06px;
+}
+.syt_dd .syt1:first-child {
+  margin-bottom: 11px;
+}
+.mt {
+  margin-top: 35px;
+}
+.mt1 {
+  margin-top: 20px;
+}
+.bank1 {
+  font-family: PingFangSC-Regular;
+}
+.bank1 .zg_icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url(../../images/zhongguoicon@2x.png);
+  background-size: 100%;
+  vertical-align: top;
+  margin-top: 10.5px;
+  margin-right: 10.5px;
+}
+.bank1 .js_icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url(../../images/jiansheicon@2x.png);
+  background-size: 100%;
+  vertical-align: top;
+  margin-top: 10.5px;
+  margin-right: 10.5px;
+}
+.bank1 .gs_icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url(../../images/gongshangicon@2x.png);
+  background-size: 100%;
+  vertical-align: top;
+  margin-top: 10.5px;
+  margin-right: 10.5px;
+}
+.bank1 .bj_icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url(../../images/beijingicon.png);
+  background-size: 100%;
+  vertical-align: top;
+  margin-top: 10.5px;
+  margin-right: 10.5px;
+}
+.bank1 .gf_icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url(../../images/guangfaicon@2x.png);
+  background-size: 100%;
+  vertical-align: top;
+  margin-top: 10.5px;
+  margin-right: 10.5px;
+}
+.bank1 .bank_info {
+  display: inline-block;
+  margin: 3px 0;
+}
+.bank1 .bank_info h3 {
+  width: auto;
+  height: 21px;
+  line-height: 21px;
+  font-size: 15px;
+  color: #222222;
+  letter-spacing: 0.05px;
+}
+.bank1 .bank_info p {
+  width: auto;
+  height: 16.5px;
+  line-height: 16.5px;
+  font-size: 12px;
+  color: #A0A0A0;
+  letter-spacing: 0.04px;
+}
+.bank1 .activity1 {
+  display: inline-block;
+  width: auto;
+  height: 18.5px;
+  line-height: 18.5px;
+  padding: 0 10px;
+  color: #F24F3E;
+  background: url(../../images/msg_biankuang.9.png) no-repeat;
+  background-size: 100% 100%;
+  vertical-align: top;
+  margin-top: 12px;
+}
+.bank1 .activity2 {
+  display: inline-block;
+  width: auto;
+  height: 18.5px;
+  line-height: 18.5px;
+  text-align: center;
+  padding: 0 10px;
+  color: #F24F3E;
+  background: url(../../images/msg_biankuang.9.png);
+  background-size: 100% 100%;
+  vertical-align: top;
+  margin-top: 12px;
+}
+.bank1 .hook {
+  display: inline-block;
+  position: absolute;
+  top: 14px;
+  right: 0;
+  width: 15px;
+  height: 15px;
+}
+.li_last {
+  padding: 8.5px 0 8.5px 25px!important;
+  -webkit-touch-callout: none;
+  font-family: PingFangSC-Regular;
+}
+.li_last a {
+  font-size: 15px;
+  color: #555555;
+  letter-spacing: 0.05px;
+}
+.li_last .qt_info p {
+  font-size: 12px;
+  letter-spacing: 0.04px;
+  color: #ED6253;
+  line-height: 16.5px;
+  margin: 3px 0;
+}
+.ok_btn {
+  position: absolute;
+  bottom: 44px!important;
+  width: 100%;
+  padding: 0 37.5px;
+}
+.ok_btn .mui-btn {
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  color: #FFF;
+  letter-spacing: 0.06px;
+  background-image: linear-gradient(-90deg, #E51D44 0%, #F24F3E 70%);
+  border-radius: 45.5px;
+}
+.mbody {
+  text-align: center;
+}
+.mbody .zf_icon {
+  width: 33px;
+  height: 33px;
+  margin: 21.5px 0;
+}
+.mbody .zf_text {
+  line-height: 25px;
+  font-family: PingFangSC-Medium;
+  font-size: 18px;
+  color: #F24F3E;
+}
+.mbody .zfje {
+  line-height: 28px;
+  font-family: PingFangSC-Semibold;
+  font-size: 20px;
+  color: #222222;
+  letter-spacing: 0.07px;
+  margin-top: 8px;
+}
+.mbody .info1 {
+  margin-top: 33.5px;
+}
+.mbody .info1 .style1 {
+  display: flex;
+  justify-content: space-between;
+  height: 21px;
+  line-height: 21px;
+  font-family: PingFangSC-Regular;
+  font-size: 15px;
+  letter-spacing: 0.05px;
+}
+.mbody .info1 .style1 .title {
+  color: #555;
+}
+.mbody .info1 .style1 .bankCode {
+  font-size: 15px;
+  color: #222;
+}
+.mbody .info1 .style1 .hyMoney {
+  color: #F24F3E;
+}
+.mbody .info1 .style1:first-child {
+  margin-bottom: 8.5px;
+}
+.mbody .order {
+  position: relative;
+  width: auto;
+  text-align: center;
+  margin-top: 28px;
+}
+.mbody .order .txt {
+  line-height: 16.5px;
+  font-size: 12px;
+  color: #A0A0A0;
+  letter-spacing: 0.04px;
+}
+.mbody .order .txt::before,
+.mbody .order .txt::after {
+  background: #eee;
+  content: "";
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  width: 42%;
+}
+.mbody .order .txt::before {
+  left: 0;
+}
+.mbody .order .txt::after {
+  right: 0;
+}
+.mbody .imgGroup {
+  margin-top: 13px;
+}
+.newBank p {
+  line-height: 16.5px;
+  margin-top: 20.5px;
+  font-size: 12px;
+  color: #A0A0A0;
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  header {
+    height: 64px;
+    padding-top: 24px;
+    box-sizing: content-box;
+  }
+
+  .mui-content {
+    padding-top: 88px;
+  }
+
+  body {
+    /* padding-bottom: 34px; */
+  }
+
+  /* 密码框 */
+  .alert-password {
+    padding-bottom: 34px !important;
+    box-sizing: content-box;
+  }
+
+  .mui-bar-tab {
+    padding-bottom: 34px;
+  }
+
+  /* iframe */
+  #sytframe {
+    bottom: 34px !important;
+  }
+
+  /* 协议 */
+  .argument.active {
+    top: 44px;
+  }
+
+  .show-card-info {
+    top: 88px;
+  }
+
+  /* 滚动区域 */
+  .mui-scroll-wrapper {
+    top: 88px !important;
+  }
+}
+.fill-20 {
+  height: 20px;
+}
+.header-nav {
+  background-color: #FFFFFF;
+  color: #000000;
+  height: 64px !important;
+  box-shadow: none;
+}
+
+.header-nav .nav_right {
+  font-size: 15px;
+  color: #000000;
+  display: inline-block;
+  height: 100%;
+}
+
+.header-nav .header-nav div:nth-of-type(3) {
+  margin-right: 1.5%;
+}
+
+.header-nav .fill-20 {
+  background-color: transparent;
+}
+
+.header-nav .mui-icon-back {
+  color: #293D51;
+}
+
+.header-nav #goBack {
+  height: 44px;
+  line-height: 44px;
+  padding-left: 4%;
+}
+
+.header-nav #goBack img {
+  width: 1.17333333rem;
+  height: 0.41333333rem;
+  position: relative;
+  margin-top: 0.38666667rem;
+}
+
+.header-nav h1 {
+  color: #293D51;
+  font-size: 0.46666667rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.header-nav div:nth-of-type(3) {
+  height: 44px;
+  line-height: 44px;
+}
+
+.header-nav .confirm {
+  padding-right: 4%;
+}
+
+.header-nav .confirm span {
+  font-size: 0.4rem;
+}
+.btn_red {
+  background-image: linear-gradient(-90deg, #E51D44 0%, #F24F3E 70%);
+  border-radius: 91px;
+  font-size: 18px;
+  padding: 10px 100px !important;
+  color: #FFFFFF;
+  width: auto !important;
+  margin: 0 auto;
+}
+
+.btn_red:active {
+  opacity: 0.7;
+}
+
+.btn_gray {
+  background-image: linear-gradient(-90deg, #b7aaaa 0%, #c7c0c0 70%);
+  border-radius: 91px;
+  font-size: 18px;
+  padding: 10px 100px !important;
+  color: #FFFFFF;
+  width: auto !important;
+  margin: 0 auto;
+}
+
+.btn_gray:active {
+  opacity: 0.7;
+}

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" class="feedback">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+    <title>银行卡</title>
+    <script src="./js/pubstyle.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="./style/css/CommonSFT.css">
+</head>
+<style>
+.mui-scroll {
+    background-color: #fff;
+}
+.mui-scroll-wrapper {
+padding-top: 71px;
+}
+</style>
+
+<body class="">
+    <div class="mask hide"></div>
+    <!-- 带返回与头部的header -->
+    <header class="mui-bar mui-bar-nav header-nav">
+        <div class="fill-20" id="fillHeader"></div>
+        <div id="closeSyt" class="mui-pull-left">
+            <span class="mui-icon iconfont icon-jiantou-xia"></span>
+        </div>
+        <h1 class="mui-title">交易详情</h1>
+    </header>
+    <!-- 主体部分 -->
+    <main class="addbankCard gl_jbyhk mui-content">
+<div class="fill-7 bg_gray"></div>
+
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <div class="successImg">
+                    <img src="./img/czcg.png" alt="">
+                    <p>充值成功！</p>
+                </div>
+                <div class="fill-50"></div>
+<ul class="czDetail">
+    <li>
+        <span>付款方式</span>
+        <span>中国建设银行（7891）</span>
+    </li>
+    <li>
+        <span>交易说明</span>
+        <span>充值</span>
+    </li>
+    <li>
+        <span>交易平台</span>
+        <span>生日管家</span>
+    </li>
+    <li>
+        <span>流水号</span>
+        <span>20180909737113</span>
+    </li>
+    <li>
+        <span>创建时间</span>
+        <span>2018-09-09 07:07:65</span>
+    </li>
+</ul>
+            </div>
+        </div>
+        
+    </main>
+</body>
+<script src="./js/mui.min.js"></script>
+<script src="./js/zepto.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    mui.ready(function () {
+        mui.init()
+        mui.init({
+            swipeBack: true //启用右滑关闭功能
+        });
+        // 弹性插件
+        mui('.mui-scroll-wrapper').scroll({
+            scrollY: true, //是否竖向滚动
+            scrollX: false, //是否横向滚动
+            startX: 0, //初始化时滚动至x
+            startY: 0, //初始化时滚动至y
+            indicators: false, //是否显示滚动条
+            deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
+            bounce: true //是否启用回弹
+        });
+    })
+    $$(".sendCode").on("tap", function () {
+        $$(this).siblings(".gray_A0A0A0").removeClass("hide")
+    })
+    // var h1 = "<div class=\"zdy_dlg\"><img src=\"./images/icon_chenggong@2x.png\"> <p>重置密码成功！</p></div>"
+    // mui.toast(h1, {
+    //     duration: 'short',
+    //     type: 'div'
+    // })
+    /* document.getElementById("confirmBtn").addEventListener('tap', function () {
+        var btnArray = ['确认放弃', '继续支付'];
+        mui.confirm('尚未完成支付，确认放弃支付吗？', 'false', btnArray, function (e) {
+            if (e.index == 1) {
+
+            } else {
+
+            }
+        })
+    }); */
+</script>
+
+</html>

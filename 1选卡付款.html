@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en" class="feedback">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+    <title>首付通收银台</title>
+    <script src="./js/pubstyle.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="./style/css/commonSFT.css">
+</head>
+<style>
+    .mui-scroll-wrapper {
+    padding-top: 0;
+    top: 242px;
+    margin-bottom: 107px;
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .mui-scroll-wrapper {
+        padding-top: 0;
+    }
+    .mui-content {
+        padding-top: 0;
+    }
+    .mui-bar-nav ~ .mui-content {
+    padding-top: 88px;
+}
+    header {
+        height: 64px;
+        padding-top: 24px;
+        box-sizing: content-box;
+    }
+    /* 滚动区域 */
+    .mui-scroll-wrapper {
+        top: 266px !important;
+    }
+    .mui-scroll-wrapper {
+        padding-top: 0 !important;
+    }
+}
+</style>
+
+<body class="bg_gray">
+    <!-- <div class="mask"></div> -->
+
+    <!-- 带返回与头部的header -->
+    <header class="mui-bar mui-bar-nav header-nav">
+        <div class="fill-20" id="fillHeader"></div>
+        <div id="closeSyt" class="mui-pull-left">
+            <span class="mui-icon iconfont icon-jiantou-xia"></span>
+        </div>
+        <h1 class="mui-title">首付通支付</h1>
+        <button class="mui-btn mui-btn-blue mui-btn-link mui-pull-right">支付管理</button>
+    </header>
+    <!-- 主体部分 -->
+    <main class="bw_cj mui-content">
+        <div class="syt_dd">
+            <div class="syt1">
+                <span class="dd_title">订单编号</span>
+                <span class="">2278395271908639</span>
+            </div>
+            <div class="syt1">
+                <span class="dd_title">订单金额</span>
+                <span class="dd_code2">¥ 100.00</span>
+            </div>
+            <div class="syt1">
+                <span class="dd_title">优惠</span>
+                <span class="zf_money sjlj">随机立减</span>
+            </div>
+            <div class="syt1">
+                <span class="dd_title2">待支付金额</span>
+                <span class="zf_money">¥ 100.00</span>
+            </div>
+        </div>
+        <div class="fill-12"></div>
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <ul class="bank_list mui-table-view mui-table-view-chevron">
+                    <li class="mui-table-view-cell mui-media ">
+                        <div class="df">
+                            <img class="" src="./images/bjns_bank.png" alt="">
+                            <label class="ml_8 text_black">北京农商银行</label>
+                        </div>
+                        <img class="hook" src="images/hook.png" />
+                    </li>
+                    <li class="mui-table-view-cell mui-media ">
+                        <div class="df">
+                            <img class="" src="./images/bjns_bank.png" alt="">
+                            <span class="bank_center">
+                                <span class="text_black">中国银行</span>
+                                <span>储蓄卡（9001）</span>
+                            </span>
+                            <label class="text_red">每满100减10元</label>
+                        </div>
+                        <img class="hook" src="images/hook.png" />
+                    </li>
+                    <li class="mui-table-view-cell mui-media">
+                        <div class="df">
+                            <img class="" src="./images/bjns_bank.png" alt="">
+                            <span class="bank_center">
+                                <span class="text_black">建设银行</span>
+                                <span>储蓄卡（0021）</span>
+                            </span>
+                        </div>
+                        <img class="hook" src="images/hook.png" />
+                    </li>
+                    <li class="mui-table-view-cell mui-media">
+                        <div class="df">
+                            <img class="" src="./images/bjns_bank.png" alt="">
+                            <span class="bank_center">
+                                <span class="text_black">中国工商银行</span>
+                                <span>储蓄卡（0021）</span>
+                            </span>
+                            <label class="text_red">工商银行卡首单支付9折</label>
+                        </div>
+                        <img class="hook" src="images/hook.png" />
+                    </li>
+                    <li class="mui-table-view-cell mui-media  mui-collapse last_item">
+                        <!-- <img class="" src="./images/bjns_bank.png" alt=""> -->
+                        <!-- <span class="bank_center ml_33">
+                            <span class="text_black">添加银行卡付款</span>
+                            <span>光大银行首单每满100减20</span>
+                        </span> -->
+                        <a class="mui-navigate-right" href="#">
+                            <p>添加银行卡付款</p>
+                            <p>光大银行首单每满100减20</p>
+                        </a>
+                        <div class="mui-collapse-content">
+                            <p>添加银行卡付款</p>
+                            <p>光大银行首单每满100减20</p>
+                            <p>光大银行首单每满100减20</p>
+                            <p>光大银行首单每满100减20</p>
+                            <p>光大银行首单每满100减20</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="fill-10"></div>
+                <div class="oterPay">其他方式支付</div>
+                <ul class="bank_list mui-table-view mui-table-view-chevron">
+                    <li class="mui-table-view-cell mui-media df">
+                        <img class="" src="./images/bjns_bank.png" alt="">
+                        <label class="ml_8 text_black">支付宝支付</label>
+                    </li>
+                    <li class="mui-table-view-cell mui-media df">
+                        <img class="" src="./images/bjns_bank.png" alt="">
+                        <label class="ml_8 text_black">微信支付</label>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        <div class="btnBox">
+            <button id="confirmBtn" class="btn_red mui-btn mui-btn-block">确认支付</button>
+        </div>
+    </main>
+</body>
+<script src="./js/mui.min.js"></script>
+<script src="./js/zepto.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    mui.init()
+    mui.init({
+        swipeBack: true //启用右滑关闭功能
+    });
+    // 弹性插件
+    mui('.mui-scroll-wrapper').scroll({
+        scrollY: true, //是否竖向滚动
+        scrollX: false, //是否横向滚动
+        startX: 0, //初始化时滚动至x
+        startY: 0, //初始化时滚动至y
+        indicators: false, //是否显示滚动条
+        deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
+        bounce: true //是否启用回弹
+    });
+
+    //移动端最好用zepto
+    $$(".bank1").on("tap", function () {
+        $$(this).find(".hook").removeClass("hide")
+        $$(this).parent("li").siblings("li").find(".hook").addClass("hide")
+    })
+    // 选工商银行的时候
+    $$(".gsBank").on("tap", function () {
+        $$(".activity2").text("随机立减,最高减99元")
+    })
+    //选中国银行的时候
+    $$(".CnBank").on("tap", function () {
+        $$(".sjlj").text("-¥ 10.00")
+    })
+</script>
+
+</html>

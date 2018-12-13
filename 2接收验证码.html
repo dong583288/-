@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en" class="feedback">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+    <title>银行卡</title>
+    <script src="./js/pubstyle.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="./style/css/CommonSFT.css">
+</head>
+<style>
+    .mui-popup-button:nth-of-type(1) {
+color: #000;
+}
+.mui-popup-button:nth-of-type(2) {
+color: #F35545;
+}
+.mui-table-view-cell:last-child:after, .mui-table-view-cell:last-child:before {
+height: 1px;
+}
+.mui-input-row label {
+padding: 11px 0;
+}
+.mui-toast-container {
+line-height: 17px;
+position: fixed;
+z-index: 9999;
+bottom: 50%;
+left: 50%;
+-webkit-transition: opacity .3s;
+transition: opacity .3s;
+-webkit-transform: translate(-50%, 0);
+transform: translate(-50%, 0);
+opacity: 0;
+}
+.mui-table-view-cell:after {
+height: 0 !important;
+}
+.pwd_inp {
+width: 100%;
+display: inline-block;
+position: absolute;
+opacity: 0;
+padding: 0 10px!important;
+z-index: 9;
+}
+</style>
+
+<body class="">
+    <div class="mask hide"></div>
+    <!-- 带返回与头部的header -->
+<header class="mui-bar mui-bar-nav header-nav bd_1">
+        <div class="fill-20" id="fillHeader"></div>
+        <div id="closeSyt" class="mui-pull-left">
+            <span class="mui-icon iconfont icon-jiantou-xia"></span>
+        </div>
+        <h1 class="mui-title">添加银行卡</h1>
+    </header>
+    <!-- 主体部分 -->
+    <main class="addbankCard gl_jbyhk mui-content">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <div class="pl_4 jsyzm">接收验证码：13899999302</div>
+                <div class="gray_title pl_4">绑卡银行需要进行短信确认</div>
+                <ul class="gl_mmk">
+                    <input class="pwd_inp" type="password" maxlength="6" value="">
+                    <li>
+                        <span>*</span>
+                    </li>
+                    <li>
+                        <span>*</span>
+                        <!-- <input type="password" maxlength="1" value=""> -->
+                    </li>
+                    <li>
+                        <span>*</span>
+                        <!-- <input type="password" maxlength="1" value=""> -->
+                    </li>
+                    <li>
+                        <span>*</span>
+                        <!-- <input type="password" maxlength="1" value=""> -->
+                    </li>
+                    <li>
+                        <span>*</span>
+                        <!-- <input type="password" maxlength="1" value=""> -->
+                    </li>
+                    <li>
+                        <span>*</span>
+                        <!-- <input type="password" maxlength="1" value=""> -->
+                    </li>
+                </ul>
+                <div class="send_yzm">
+                    <a href="#" id="notSend" class="mui-pull-left pl_4 red_ED6253">收不到验证码？</a>
+                    <a href="#" class="mui-pull-right pr_4 red_ED6253 sendCode">重新发送验证码</a>
+                    <a href="#" class="mui-pull-right pr_4 hide gray_A0A0A0">重新发送（54）</a>
+                </div>
+                <button id="confirmBtn" class="btn_red_gray mui-btn mui-btn-block">下一步</button>
+            </div>
+        </div>
+        <ul class="mui-table-view mui-table-view-chevron mui-row keyboard">
+            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
+                1
+            </li>
+            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
+                2
+            </li>
+            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
+                3
+            </li>
+            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
+                4
+            </li>
+            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
+                5
+            </li>
+            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
+                6
+            </li>
+            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
+                7
+            </li>
+            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
+                8
+            </li>
+            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
+                9
+            </li>
+            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
+                +&nbsp;*&nbsp;#
+            </li>
+            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
+                0
+            </li>
+            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
+                <span class="mui-icon mui-icon-close"></span>
+            </li>
+        </ul>
+    </main>
+    <div class="custom_popup">
+        <div class="popup_title">收不到验证码</div>
+        <div class="popup_content">
+            <p>验证码发送至你的银行预留手机号</p>
+            <p>1、请确认当前是否使用银行预留的手机号码</p>
+            <p>2、请检查短信是否被手机安全软件拦截</p>
+            <p>3、若预留号码已停用，请联系银行客服咨询</p>
+            <p>4、获取更多帮助，请拨打客服电话400-115-0505</p>
+        </div>
+        <span id="mui_close" class="mui-icon mui-icon-close"></span>
+    </div>
+</body>
+<script src="./js/mui.min.js"></script>
+<script src="./js/zepto.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    mui.ready(function () {
+        mui.init()
+        mui.init({
+            swipeBack: true //启用右滑关闭功能
+        });
+        // 弹性插件
+        mui('.mui-scroll-wrapper').scroll({
+            scrollY: true, //是否竖向滚动
+            scrollX: false, //是否横向滚动
+            startX: 0, //初始化时滚动至x
+            startY: 0, //初始化时滚动至y
+            indicators: false, //是否显示滚动条
+            deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
+            bounce: true //是否启用回弹
+        });
+    })
+    $$(".sendCode").on("tap", function () {
+        $$(this).siblings(".gray_A0A0A0").removeClass("hide")
+    })
+    // var h1 = "<div class=\"zdy_dlg\"><img src=\"./images/icon_chenggong@2x.png\"> <p>重置密码成功！</p></div>"
+    // mui.toast(h1, {
+    //     duration: 'short',
+    //     type: 'div'
+    // })
+    /* document.getElementById("confirmBtn").addEventListener('tap', function () {
+        var btnArray = ['确认放弃', '继续支付'];
+        mui.confirm('尚未完成支付，确认放弃支付吗？', 'false', btnArray, function (e) {
+            if (e.index == 1) {
+
+            } else {
+
+            }
+        })
+    }); */
+</script>
+
+</html>

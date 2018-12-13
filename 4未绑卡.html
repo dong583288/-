@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" class="feedback">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+    <title>银行卡</title>
+    <script src="./js/pubstyle.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="./style/css/CommonSFT.css">
+</head>
+<style>
+    .mui-popup-button:nth-of-type(1) {
+color: #000;
+}
+.mui-popup-button:nth-of-type(2) {
+color: #F35545;
+}
+.mui-popup-title+.mui-popup-text {
+font-size: 15px;
+margin: 5px 0 0;
+font-family: PingFangSC-Regular;
+color: #555555;
+letter-spacing: 0.05px;
+/* text-align: left; */
+}
+</style>
+
+<body class="">
+    <div class="mask hide"></div>
+    <!-- 带返回与头部的header -->
+    <header class="mui-bar mui-bar-nav header-nav">
+        <div class="fill-20" id="fillHeader"></div>
+        <div id="closeSyt" class="mui-pull-left">
+            <span class="mui-icon iconfont icon-jiantou-xia"></span>
+        </div>
+        <h1 class="mui-title">提现</h1>
+    </header>
+    <!-- 主体部分 -->
+    <main class="addbankCard gl_jbyhk mui-content">
+        <div class="fill-7 bg_gray"></div>
+
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+
+            </div>
+        </div>
+
+    </main>
+</body>
+<script src="./js/mui.min.js"></script>
+<script src="./js/zepto.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    mui.ready(function () {
+        mui.init()
+        mui.init({
+            swipeBack: true //启用右滑关闭功能
+        });
+        // 弹性插件
+        mui('.mui-scroll-wrapper').scroll({
+            scrollY: true, //是否竖向滚动
+            scrollX: false, //是否横向滚动
+            startX: 0, //初始化时滚动至x
+            startY: 0, //初始化时滚动至y
+            indicators: false, //是否显示滚动条
+            deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
+            bounce: true //是否启用回弹
+        });
+    })
+    var btnArray = ['以后再说', '现在就去'];
+    mui.confirm('您还没有可使用的银行卡，请添加银行卡', '', btnArray, function (e) {
+        if (e.index == 1) {
+
+        } else {
+
+        }
+    })
+</script>
+
+</html>
