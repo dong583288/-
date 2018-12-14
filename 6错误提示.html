@@ -39,6 +39,9 @@ color: #F35545;
     transform: translate(-50%, 0);
     opacity: 0;
 }
+.bankno input {
+    margin-left: 34px;
+}
 </style>
 
 <body class="bg_gray">
@@ -97,7 +100,7 @@ color: #F35545;
                     <div class="fill-25 bg_gray"></div>
                     <li class="bankno mui-input-row">
                         <span>手机号</span>
-                        <span class="line_addbank"></span>
+                        <!-- <span class="line_addbank"></span> -->
                         <input type="tel" class="mui-input-clear " placeholder="请输入银行预留的手机号">
                         <img class="bf_icon" src="./images/iocn_wenhao@2x.png" alt="" id="showTitle">
                     </li>
@@ -110,9 +113,13 @@ color: #F35545;
                     <label class="lr_0">同意<span class="red_ED6253">《用户协议》《银行签约协议》《快捷支付协议》</span></label>
                     <!-- </span> -->
                 </div>
+                <div class="fill-20"></div>
+                <button id="confirmBtn" class="btn_red_gray mui-btn mui-btn-block">确认支付90元</button>
             </div>
         </div>
         <!-- <button id="confirmBtn" class="btn_gray mui-btn mui-btn-block mt_50">下一步</button> -->
+        <!-- <div class="btnBox"> -->
+        <!-- </div> -->
     </main>
 </body>
 <script src="./js/mui.min.js"></script>

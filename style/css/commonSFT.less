@@ -218,10 +218,11 @@ body {
 .btn_red {
     background-image: linear-gradient(-90deg, #E51D44 0%, #F24F3E 70%);
     border-radius: 8px;
-    font-size: 18px;
-    padding: 10px 130px !important;
-    color: @white;
-    width: auto !important;
+    font-size: 18px; // padding: 10px 130px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    width: 335px;
+    color: @white; // width: auto !important;
     margin: 0 auto;
 }
 
@@ -233,10 +234,12 @@ body {
 .btn_red_gray {
     background: #E69898;
     border-radius: 8px;
-    font-size: 18px;
-    padding: 10px 130px !important;
+    font-size: 18px; // padding: 10px 130px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    width: 335px;
     color: @white;
-    width: auto !important;
+    // width: auto !important;
     margin: 0 auto;
 }
 
@@ -919,7 +922,15 @@ button {
     }
 }
 
-// 12_12_通用首付通
+// 12_12_通用首付通------------
+// ----------公用-----------------
+.df_left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+// ---------------------------
 .syt_dd {
     background-color: @white;
     margin-top: 7px;
@@ -1010,6 +1021,10 @@ button {
     color: @red_C62323;
     letter-spacing: 0.04px;
     text-align: right;
+}
+
+.font_color_red {
+    color: @red_C62323;
 }
 
 .bank_center {
@@ -1205,6 +1220,17 @@ button {
     background: @bg_gray_efeff4;
     padding-left: 4%;
 }
+
 .font_color_222 {
-    color: @black_222!important;
+    color: @black_222  !important;
+}
+
+.otherList {
+    img {
+        width: 22px;
+        height: 22px;
+    }
+    label {
+        margin-left: 12px;
+    }
 }
