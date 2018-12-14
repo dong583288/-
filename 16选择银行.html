@@ -49,7 +49,7 @@ input {
 </style>
 
 <body class="bg_gray">
-    <div class="mask hide"></div>
+    <div class="mask "></div>
     <!-- 带返回与头部的header -->
     <header class="mui-bar mui-bar-nav header-nav">
         <div class="fill-20" id="fillHeader"></div>
@@ -97,6 +97,43 @@ input {
             </div>
         </div>
     </main>
+    <!-- 弹窗 -->
+    <div class="selectBank_popup">
+        <!-- <div id="scroll1" class="mui-scroll-wrapper"> -->
+        <!-- <div class="mui-scroll"> -->
+        <ul class="bank_list mui-table-view mui-table-view-chevron">
+            <li class="mui-table-view-cell mui-media ">
+                <div class="df">
+                    <img class="" src="./img/zgyh.png" alt="">
+                    <label class="ml_8 text_black">中国银行储蓄卡</label>
+                </div>
+                <img class="hook hide" src="./img/selected.png" />
+            </li>
+            <li class="mui-table-view-cell mui-media ">
+                <div class="df">
+                    <img class="" src="./img/jsyh.png" alt="">
+                    <label class="ml_8 text_black">建设银行储蓄卡</label>
+                </div>
+                <img class="hook" src="./img/selected.png" />
+            </li>
+            <li class="mui-table-view-cell mui-media ">
+                <div class="df">
+                    <img class="" src="./img/gsyh.png" alt="">
+                    <label class="ml_8 text_black">工商银行储蓄卡</label>
+                </div>
+                <img class="hook hide" src="./img/selected.png" />
+            </li>
+            <li class="mui-table-view-cell mui-media ">
+                <div class="df">
+                    <img class="" src="./img/tianjia.png" alt="">
+                    <label class="ml_8 text_black">使用新银行卡付款</label>
+                </div>
+                <!-- <img class="hook" src="./img/selected.png" /> -->
+            </li>
+        </ul>
+        <!-- </div> -->
+        <!-- </div> -->
+    </div>
 </body>
 <script src="./js/mui.min.js"></script>
 <script src="./js/zepto.min.js"></script>

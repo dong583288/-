@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en" class="feedback">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+    <title>银行卡</title>
+    <script src="./js/pubstyle.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="./style/css/CommonSFT.css">
+</head>
+<style>
+
+    .mui-scroll-wrapper {
+padding-top: 71px;
+}
+.mui-table-view:after {
+position: absolute;
+right: 15px;
+bottom: 0;
+left: 15px;
+height: 1px!important;
+content: '';
+-webkit-transform: scaleY(.5);
+transform: scaleY(.5);
+background-color: #c8c7cc;
+}
+.mui-scroll-wrapper {
+padding-top: 71px;
+margin-bottom: 47px;
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .mui-scroll-wrapper {
+        padding-top: 71px;
+        margin-bottom: 64px;
+    }
+    .wdqb_btn{
+        /* padding-bottom: 17px;
+        box-sizing: content-box; */
+        height: 64px;
+        line-height: 64px;
+    }
+}
+</style>
+
+<body class="">
+    <div class="mask hide"></div>
+    <!-- 带返回与头部的header -->
+    <header class="mui-bar mui-bar-nav header-nav bd_1">
+        <div class="fill-20" id="fillHeader"></div>
+        <div id="closeSyt" class="mui-pull-left">
+            <span class="mui-icon iconfont icon-jiantou-xia"></span>
+        </div>
+        <h1 class="mui-title">我的钱包</h1>
+    </header>
+    <div class="fill-7"></div>
+    <!-- 主体部分 -->
+    <main class="addbankCard gl_jbyhk mui-content">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <div class="wdqb">
+                    <p>当前余额（元）</p>
+                    <div class="fill-10"></div>
+                    <p>9730.87</p>
+                </div>
+                <div class="fill-10 bg_gray"></div>
+                <ul class="bank_list mui-table-view mui-table-view-chevron ">
+                    <li class="mui-table-view-cell mui-media wdqb_li">
+                        <div class="df">
+                            <img class="" src="./img/zhuanzhangjilu.png" alt="">
+                            <label class="ml_8 text_black">转账记录</label>
+                        </div>
+                        <!-- <img class="hook hide" src="./img/selected.png" /> -->
+                    </li>
+                    <li class="mui-table-view-cell mui-media wdqb_li">
+                        <div class="df">
+                            <img class="" src="./img/yinhangka.png" alt="">
+                            <label class="ml_8 text_black">银行卡</label>
+                        </div>
+                        <!-- <img class="hook" src="./img/selected.png" /> -->
+                    </li>
+                    <li class="mui-table-view-cell mui-media wdqb_li">
+                        <div class="df">
+                            <img class="" src="./img/anquanzhongxin.png" alt="">
+                            <label class="ml_8 text_black">安全中心</label>
+                        </div>
+                        <!-- <img class="hook hide" src="./img/selected.png" /> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="wdqb_btn">
+            <button>提现</button>
+            <button>充值</button>
+        </div>
+    </main>
+</body>
+<script src="./js/mui.min.js"></script>
+<script src="./js/zepto.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    mui.ready(function () {
+        mui.init()
+        mui.init({
+            swipeBack: true //启用右滑关闭功能
+        });
+        // 弹性插件
+        mui('.mui-scroll-wrapper').scroll({
+            scrollY: true, //是否竖向滚动
+            scrollX: false, //是否横向滚动
+            startX: 0, //初始化时滚动至x
+            startY: 0, //初始化时滚动至y
+            indicators: false, //是否显示滚动条
+            deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
+            bounce: true //是否启用回弹
+        });
+    })
+    $$(".sendCode").on("tap", function () {
+        $$(this).siblings(".gray_A0A0A0").removeClass("hide")
+    })
+    // var h1 = "<div class=\"zdy_dlg\"><img src=\"./images/icon_chenggong@2x.png\"> <p>重置密码成功！</p></div>"
+    // mui.toast(h1, {
+    //     duration: 'short',
+    //     type: 'div'
+    // })
+    /* document.getElementById("confirmBtn").addEventListener('tap', function () {
+        var btnArray = ['确认放弃', '继续支付'];
+        mui.confirm('尚未完成支付，确认放弃支付吗？', 'false', btnArray, function (e) {
+            if (e.index == 1) {
+
+            } else {
+
+            }
+        })
+    }); */
+</script>
+
+</html>

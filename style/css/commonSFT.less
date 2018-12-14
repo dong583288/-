@@ -969,6 +969,21 @@ button {
     letter-spacing: 0.05px;
 }
 
+// ----------动画-------------
+.selectBank_popup {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 335px;
+    z-index: 140;
+    overflow-y: auto;
+    background-color: #fff;
+    .mui-scroll-wrapper {
+        padding-top: 0;
+    }
+}
+
 // ---------------------------
 .syt_dd {
     background-color: @white;
@@ -1467,16 +1482,18 @@ button {
         width: 34px;
         height: 45px;
     }
-    input {
+    .txwz_money {
         // font-family: PingFangSC-Regular;
         // font-size: @font-18;
         // color: @black_222;
         // letter-spacing: 0.05px;
         // margin-left: 20px;
+        display: inline-block;
         font-family: PingFangSC-Regular;
         font-size: 50px;
         color: #202020;
         letter-spacing: 0.2px;
+        margin-left: 12px;
     }
 }
 
@@ -1505,4 +1522,165 @@ button {
         color: @red_C62323;
         letter-spacing: 0.05px;
     }
+}
+
+.tijiaoshenqing {
+    background-color: @white;
+    p {
+        width: 225px;
+        margin: 0 auto;
+    }
+    p:nth-of-type(1) {
+        margin-top: 39px;
+        font-family: PingFangSC-Regular;
+        font-size: @font-15;
+        color: @black_222;
+        letter-spacing: 0.05px;
+    }
+    p:nth-of-type(2) {
+        margin-top: 9px;
+        font-family: PingFangSC-Regular;
+        font-size: @font-14;
+        color: @gray_A0A0A0;
+        letter-spacing: 0.05px;
+    }
+}
+
+.wdqb {
+    padding: 35px 0;
+    p {
+        text-align: center;
+    }
+    p:nth-of-type(1) {
+        font-family: PingFangSC-Regular;
+        font-size: @font-15;
+        color: #4A4A4A;
+        letter-spacing: -0.15px;
+    }
+    p:nth-of-type(2) {
+        font-family: PingFangSC-Semibold;
+        font-size: @font-30;
+        color: @black_222;
+        letter-spacing: -0.15px;
+    }
+}
+
+.wdqb_li {
+    &:nth-of-type(1) {
+        img {
+            width: 22px;
+            height: 18px;
+        }
+    }
+    &:nth-of-type(2) {
+        img {
+            width: 22px;
+            height: 18px;
+        }
+    }
+    &:nth-of-type(3) {
+        img {
+            width: 20px;
+            height: 22px;
+        }
+    }
+}
+
+.wdqb_btn {
+    width: 100%;
+    height: 47px;
+    line-height: 47px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 0;
+    button {
+        width: 50%;
+        height: 100%;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        z-index: 10;
+        border-radius: 0;
+        &:nth-of-type(1) {
+            background-color: @white;
+            font-family: PingFangSC-Medium;
+            font-size: @font-16;
+            color: @black_555;
+            letter-spacing: -0.16px;
+        }
+        &:nth-of-type(2) {
+            background-color: @red_C62323;
+            font-family: PingFangSC-Medium;
+            font-size: @font-16;
+            color: #FFFFFF;
+            letter-spacing: -0.16px;
+        }
+    }
+}
+
+.img_box_weitianjia {
+    text-align: center;
+    img {
+        width: 126px;
+        height: 126px;
+        margin-top: 42px;
+    }
+    p {
+        font-family: PingFangSC-Medium;
+        font-size: @font-18;
+        color: @black_222;
+    }
+}
+
+.card_js::after {
+    content: '';
+    background: url(../../img/jiansheyinhang@2x.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 123px;
+    height: 107px;
+}
+
+.card_info .js_bank::before {
+    content: '';
+    background: url(../../img/jsyh_72.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: -11px;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    margin: 11px;
+}
+
+.last_bank_card {
+    p {
+        left: 15px;
+    }
+}
+
+.card_bj::after {
+    content: '';
+    background: url(../../img/beijingyinhang@2x.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 123px;
+    height: 107px;
+}
+
+.card_info .bj_bank::before {
+    content: '';
+    background: url(../../img/beijingyh_72.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: -11px;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    margin: 11px;
 }

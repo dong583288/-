@@ -858,6 +858,19 @@ button {
   color: #202020 !important;
   letter-spacing: 0.05px;
 }
+.selectBank_popup {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 335px;
+  z-index: 140;
+  overflow-y: auto;
+  background-color: #fff;
+}
+.selectBank_popup .mui-scroll-wrapper {
+  padding-top: 0;
+}
 .syt_dd {
   background-color: #FFFFFF;
   margin-top: 7px;
@@ -1304,11 +1317,13 @@ button {
   width: 34px;
   height: 45px;
 }
-.showMoney_bot input {
+.showMoney_bot .txwz_money {
+  display: inline-block;
   font-family: PingFangSC-Regular;
   font-size: 50px;
   color: #202020;
   letter-spacing: 0.2px;
+  margin-left: 12px;
 }
 .rightRooket {
   color: #575757;
@@ -1334,4 +1349,145 @@ button {
   font-size: 15px;
   color: #C62323;
   letter-spacing: 0.05px;
+}
+.tijiaoshenqing {
+  background-color: #FFFFFF;
+}
+.tijiaoshenqing p {
+  width: 225px;
+  margin: 0 auto;
+}
+.tijiaoshenqing p:nth-of-type(1) {
+  margin-top: 39px;
+  font-family: PingFangSC-Regular;
+  font-size: 15px;
+  color: #222222;
+  letter-spacing: 0.05px;
+}
+.tijiaoshenqing p:nth-of-type(2) {
+  margin-top: 9px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #A0A0A0;
+  letter-spacing: 0.05px;
+}
+.wdqb {
+  padding: 35px 0;
+}
+.wdqb p {
+  text-align: center;
+}
+.wdqb p:nth-of-type(1) {
+  font-family: PingFangSC-Regular;
+  font-size: 15px;
+  color: #4A4A4A;
+  letter-spacing: -0.15px;
+}
+.wdqb p:nth-of-type(2) {
+  font-family: PingFangSC-Semibold;
+  font-size: 30px;
+  color: #222222;
+  letter-spacing: -0.15px;
+}
+.wdqb_li:nth-of-type(1) img {
+  width: 22px;
+  height: 18px;
+}
+.wdqb_li:nth-of-type(2) img {
+  width: 22px;
+  height: 18px;
+}
+.wdqb_li:nth-of-type(3) img {
+  width: 20px;
+  height: 22px;
+}
+.wdqb_btn {
+  width: 100%;
+  height: 47px;
+  line-height: 47px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  font-size: 0;
+}
+.wdqb_btn button {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  border-radius: 0;
+}
+.wdqb_btn button:nth-of-type(1) {
+  background-color: #FFFFFF;
+  font-family: PingFangSC-Medium;
+  font-size: 16px;
+  color: #555555;
+  letter-spacing: -0.16px;
+}
+.wdqb_btn button:nth-of-type(2) {
+  background-color: #C62323;
+  font-family: PingFangSC-Medium;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: -0.16px;
+}
+.img_box_weitianjia {
+  text-align: center;
+}
+.img_box_weitianjia img {
+  width: 126px;
+  height: 126px;
+  margin-top: 42px;
+}
+.img_box_weitianjia p {
+  font-family: PingFangSC-Medium;
+  font-size: 18px;
+  color: #222222;
+}
+.card_js::after {
+  content: '';
+  background: url(../../img/jiansheyinhang@2x.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 123px;
+  height: 107px;
+}
+.card_info .js_bank::before {
+  content: '';
+  background: url(../../img/jsyh_72.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: -11px;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  margin: 11px;
+}
+.last_bank_card p {
+  left: 15px;
+}
+.card_bj::after {
+  content: '';
+  background: url(../../img/beijingyinhang@2x.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 123px;
+  height: 107px;
+}
+.card_info .bj_bank::before {
+  content: '';
+  background: url(../../img/beijingyh_72.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: -11px;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  margin: 11px;
 }
