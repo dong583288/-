@@ -955,6 +955,20 @@ button {
     justify-content: flex-start;
 }
 
+.text_color_gray {
+    font-family: PingFangSC-Regular;
+    font-size: @font-15;
+    color: @gray_A0A0A0  !important;
+    letter-spacing: 0.05px;
+}
+
+.text_color_gray_20 {
+    font-family: PingFangSC-Regular;
+    font-size: @font-15;
+    color: #202020 !important;
+    letter-spacing: 0.05px;
+}
+
 // ---------------------------
 .syt_dd {
     background-color: @white;
@@ -1430,5 +1444,65 @@ button {
         font-family: PingFangSC-Medium;
         font-size: @font-20;
         color: @black_222;
+    }
+}
+
+.showMoney {
+    background: @white;
+    padding: 0 4%;
+    padding-top: 13px; // padding-bottom: 30px;
+}
+
+.showMoney_top {
+    font-family: PingFangSC-Regular;
+    font-size: @font-15;
+    color: @black_222;
+    letter-spacing: 0.05px;
+}
+
+.showMoney_bot {
+    display: flex;
+    align-items: center;
+    img {
+        width: 34px;
+        height: 45px;
+    }
+    input {
+        // font-family: PingFangSC-Regular;
+        // font-size: @font-18;
+        // color: @black_222;
+        // letter-spacing: 0.05px;
+        // margin-left: 20px;
+        font-family: PingFangSC-Regular;
+        font-size: 50px;
+        color: #202020;
+        letter-spacing: 0.2px;
+    }
+}
+
+.rightRooket {
+    color: #575757;
+    font-size: 30px
+}
+
+.quanbutixian {
+    margin: 0 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #E9E9E9;
+    height: 43px;
+    margin-top: 33px;
+    span:nth-child(1) {
+        font-family: PingFangSC-Regular;
+        font-size: @font-14;
+        color: #E98989;
+        letter-spacing: 0.04px;
+    }
+    span:nth-child(2) {
+        font-family: PingFangSC-Medium;
+        font-size: @font-15;
+        color: @red_C62323;
+        letter-spacing: 0.05px;
     }
 }
