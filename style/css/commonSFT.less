@@ -934,6 +934,21 @@ button {
 
 // 12_12_通用首付通------------
 // ----------公用-----------------
+.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar {
+    background-color: #C62323;
+}
+
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+    color: #C62323;
+    border-bottom: 2px solid #007aff;
+    background: 0 0;
+}
+
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
+    border-top: 0;
+    border-bottom: 0;
+}
+
 .df_left {
     display: flex;
     align-items: center;
@@ -1381,5 +1396,39 @@ button {
     }
     .d_btn:first-child {
         color: #E51E43;
+    }
+}
+
+.jiaoyijilu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .item_lf {
+        display: flex;
+        img {
+            width: 38px !important;
+            height: 38px !important;
+        }
+        div {
+            margin-left: 20px;
+            span:nth-child(1) {
+                display: inline-block;
+                width: 100%;
+                font-family: PingFangSC-Regular;
+                font-size: @font-16;
+                color: @black_222;
+            }
+            span:nth-child(2) {
+                font-family: PingFangSC-Regular;
+                font-size: @font-14;
+                color: #888888;
+            }
+        }
+    }
+    .item_rt {
+        margin-right: 15px;
+        font-family: PingFangSC-Medium;
+        font-size: @font-20;
+        color: @black_222;
     }
 }
