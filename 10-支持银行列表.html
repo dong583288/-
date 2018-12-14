@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en" class="feedback">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+    <title>银行卡</title>
+    <script src="./js/pubstyle.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="./style/css/CommonSFT.css">
+</head>
+<style>
+    .mui-popup-button:nth-of-type(1) {
+color: #000;
+}
+.mui-popup-button:nth-of-type(2) {
+color: #F35545;
+}
+.mui-table-view-cell:last-child:after, .mui-table-view-cell:last-child:before {
+height: 1px;
+}
+.mui-input-row label {
+padding: 11px 0;
+}
+.mui-input-row label {
+    font-family: 'Helvetica Neue',Helvetica,sans-serif;
+    width: 90%;
+}
+h1 {
+    font-weight: 700;
+}
+.mui-scroll-wrapper {
+padding-top: 0;
+/* margin-top: 74px!important; */
+padding-bottom: 44px;
+}
+.addbankCard {
+width: 100%!important;
+margin: 0!important;
+}
+input[type=search] {
+background-color: rgba(0,0,0,.1);
+margin: 0 4%;
+width: 92%;
+margin-top: 5px;
+margin-bottom: 20px;
+}
+.mui-search {
+background: #fff;
+}
+.mui-search .mui-placeholder {
+line-height: 2;
+margin-top: 5px;
+}
+.mui-input-row span {
+color: #979797;
+}
+.mui-search.mui-active:before {
+left: 5%;
+}
+.item_jt::after {
+display: none;
+}
+.bankImg {
+font-size: 0;
+border: 0 none;
+float: left;
+width: 22px;
+height: 22px;
+margin-right: 10px;
+margin-top: 8px;
+}
+.mui-input-row label {
+width: auto;
+}
+.bank_title {
+font-family: 'PingFangSC-Medium';
+font-size: 16px;
+color: #555555;
+padding: 15px;
+}
+.mui-table-view-chevron .mui-table-view-cell {
+padding-right: 0;
+padding-top: 5px!important;
+padding-bottom: 5px!important;
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+.header-nav {
+padding-top: 20px;
+box-sizing: content-box;
+}
+.mui-bar-nav~.mui-content {
+padding-top: 74px;
+}
+}
+.mui-scroll-wrapper {
+padding-top: 0;
+margin-top: 124px!important;
+padding-bottom: 44px;
+}
+</style>
+
+<body class="">
+    <div class="mask hide"></div>
+    <!-- 带返回与头部的header -->
+    <header class="mui-bar mui-bar-nav header-nav">
+        <div class="fill-20" id="fillHeader"></div>
+        <div id="closeSyt" class="mui-pull-left">
+            <span class="mui-icon iconfont icon-jiantou-xia"></span>
+        </div>
+        <h1 class="mui-title">选择银行</h1>
+    </header>
+    <!-- 主体部分 -->
+    <main class="addbankCard mui-content">
+        <div class="mui-indexed-list-search mui-input-row mui-search">
+            <input type="search" class="mui-input-clear mui-indexed-list-search-input" placeholder="搜索银行">
+        </div>
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <ul class="cj_list mui-table-view mui-table-view-chevron">
+                    <div class="bank_title">B</div>
+                    <li class="mui-table-view-cell mui-media">
+                        <div class="mui-input-row item_jt lh38">
+                            <img class="bankImg" src="./images/bjns_bank.png" alt="">
+                            <label>北京农商银行</label>
+                        </div>
+                    </li>
+                    <li class="mui-table-view-cell mui-media">
+                        <div class="mui-input-row item_jt lh38">
+                            <img class="bankImg" src="./images/bj_bank.png" alt="">
+                            <label>北京银行</label>
+                            <span></span>
+                        </div>
+                    </li>
+                    <li class="mui-table-view-cell mui-media">
+                        <div class="mui-input-row item_jt lh38">
+                            <img class="bankImg" src="./images/bh_bank.png" alt="">
+                            <label>渤海银行</label>
+                            <span></span>
+                        </div>
+                    </li>
+
+                    <div class="bank_title">C</div>
+                    <li class="mui-table-view-cell mui-media">
+                        <div class="mui-input-row item_jt lh38">
+                            <img class="bankImg" src="./images/csns_bank.png" alt="">
+                            <label>常熟农商银行</label>
+                        </div>
+                    </li>
+                    <li class="mui-table-view-cell mui-media">
+                        <div class="mui-input-row item_jt lh38">
+                            <img class="bankImg" src="./images/cd_bank.png" alt="">
+                            <label>成都银行</label>
+                            <span></span>
+                        </div>
+                    </li>
+                    <li class="mui-table-view-cell mui-media">
+                        <div class="mui-input-row item_jt lh38">
+                            <img class="bankImg" src="./images/chongqin_bank.png" alt="">
+                            <label>重庆银行</label>
+                            <span></span>
+                        </div>
+                    </li>
+
+                    <div class="bank_title">D</div>
+                    <li class="mui-table-view-cell mui-media">
+                        <div class="mui-input-row item_jt lh38">
+                            <img class="bankImg" src="./images/csns_bank.png" alt="">
+                            <label>大连银行</label>
+                        </div>
+                    </li>
+                    <li class="mui-table-view-cell mui-media">
+                        <div class="mui-input-row item_jt lh38">
+                            <img class="bankImg" src="./images/deizhou_bank.png" alt="">
+                            <label>德州银行</label>
+                            <span></span>
+                        </div>
+                    </li>
+                    <li class="mui-table-view-cell mui-media">
+                        <div class="mui-input-row item_jt lh38">
+                            <img class="bankImg" src="./images/dongya_bank.png" alt="">
+                            <label>东亚银行</label>
+                            <span></span>
+                        </div>
+                    </li>
+                    <li class="mui-table-view-cell mui-media">
+                        <div class="mui-input-row item_jt lh38">
+                            <img class="bankImg" src="./images/dongying_bank.png" alt="">
+                            <label>东营银行</label>
+                            <span></span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./js/mui.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    mui.ready(function () {
+        mui.init()
+        mui.init({
+            swipeBack: true //启用右滑关闭功能
+        });
+        // 弹性插件
+        mui('.mui-scroll-wrapper').scroll({
+            scrollY: true, //是否竖向滚动
+            scrollX: false, //是否横向滚动
+            startX: 0, //初始化时滚动至x
+            startY: 0, //初始化时滚动至y
+            indicators: false, //是否显示滚动条
+            deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
+            bounce: true //是否启用回弹
+        });
+    })
+    document.getElementById("confirmBtn").setAttribute("disabled", true)
+    /* document.getElementById("confirmBtn").addEventListener('tap', function () {
+        var btnArray = ['确认放弃', '继续支付'];
+        mui.confirm('尚未完成支付，确认放弃支付吗？', 'false', btnArray, function (e) {
+            if (e.index == 1) {
+
+            } else {
+
+            }
+        })
+    }); */
+</script>
+
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" class="feedback">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+    <title>解绑</title>
+    <script src="./js/pubstyle.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="./style/css/commonSFT.css">
+    <!-- <link rel="stylesheet" href="./style/css/CommonBW.css"> -->
+    <!-- <link rel="stylesheet" href="./style/css/pageStyle.css"> -->
+</head>
+<style>
+    body { font-family: PingFangSC-Regular; }
+    .mui-table-view-chevron .mui-table-view-cell { padding-right: 0; }
+    .mui-input-row label { width: 35%; }
+    .mui-table-view-cell { padding: 16px 15px; }
+    .mui-table-view-cell a { font-size: 15px; }
+    .mui-scroll-wrapper { padding-top: 66px; }
+    .mui-scroll { position: relative; height: 100%; }
+@media only screen and (-webkit-device-pixel-ratio: 3) and (device-height: 812px) and (device-width: 375px){
+.mui-content {
+padding-top: 0;
+}
+.mui-scroll-wrapper {
+padding-top: 0!important;
+}
+}
+.mui-bar .mui-btn-link {
+color: #293D51;
+}
+</style>
+
+<body class="bg_gray">
+    <div class="mask hide"></div>
+    <!-- 带返回与头部的header -->
+    <header class="mui-bar mui-bar-nav header-nav">
+        <div class="fill-20" id="fillHeader"></div>
+        <div id="closeSyt" class="mui-pull-left">
+            <span class="mui-icon mui-icon-back"></span>
+        </div>
+        <button type="button" class="mui-btn mui-btn-link mui-pull-right">解绑</button>
+    </header>
+    <!-- 主体部分 -->
+    <main class="bw_cj mui-content">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <div class="mui-content">
+                    <div class="mui-row">
+                        <div class="mui-col-sm-12 mui-col-xs-12">
+                            <div class="card_info card_gh">
+                                <div class="card_text gh_bank">
+                                    <h3>工商银行</h3>
+                                    <p>储蓄卡</p>
+                                </div>
+                                <p class="cardh">6227 **** **** **** 2020</p>
+                            </div>
+                        </div>
+                        <div class="mui-col-sm-12 mui-col-xs-12">
+                            <div class="bank_panle">
+                                <div class="bank_title">银行支付限额</div>
+                                <div class="bank_xe"><span>单笔限额：</span><span>¥200000</span></div>
+                                <div class="bank_xe"><span>每日限额：</span><span>¥200000</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="mui-btn mui-btn-outlined d_btn">解绑</button>
+                    <button type="button" class="mui-btn mui-btn-outlined d_btn">取消</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./js/mui.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    mui.ready(function () {
+        mui.init()
+        mui.init({
+            swipeBack: true //启用右滑关闭功能
+        });
+
+    })
+</script>
+
+</html>

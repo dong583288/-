@@ -632,12 +632,12 @@ button {
 }
 .cgtjyhk img {
   margin-top: 51px;
-  width: 171px;
+  width: 100px;
   height: auto;
 }
 .cgtjyhk p {
   margin-top: 60px;
-  color: #F35545;
+  color: #C62323;
   font-size: 24px;
 }
 /* 密码 */
@@ -697,8 +697,8 @@ button {
   margin-top: 15px;
   overflow: hidden;
 }
-.send_yzm .gray_A0A0A0 {
-  margin-top: 17px;
+.send_yzm a {
+  font-size: 12px;
 }
 .jsyzm {
   font-size: 18px;
@@ -1087,4 +1087,138 @@ button {
 }
 .otherList label {
   margin-left: 12px;
+}
+.bankName {
+  font-family: PingFangSC-Medium;
+  font-size: 15px;
+  color: #222222;
+}
+.bankName span:nth-child(2) {
+  margin-left: 25px;
+  font-family: PingFangSC-Medium;
+  font-size: 15px;
+  color: #222222;
+}
+.card_info {
+  width: auto;
+  height: 107px;
+  margin: 10px 15px 0;
+  background: #FFFFFF;
+  border-radius: 8px;
+  position: relative;
+  color: #222;
+  font-family: PingFangSC-Regular;
+}
+.card_info .card_text {
+  width: 100%;
+  height: 38px;
+  line-height: 22px;
+  position: relative;
+  top: 12px;
+  padding-top: 2px;
+  padding-left: 58px;
+  color: #222;
+}
+.card_info .card_text h3 {
+  font-size: 15px;
+  letter-spacing: 0.05px;
+}
+.card_info .card_text p {
+  font-size: 13px;
+  letter-spacing: 0.04px;
+}
+.card_info .gh_bank::before {
+  content: '';
+  background: url('../../images/gongshangyinhang.png') no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: -11px;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  margin: 11px;
+}
+.card_info .js_bank::before {
+  content: '';
+  background: url('../../images/jiansheyinhang2x.png') no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: -11px;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  margin: 11px;
+}
+.card_info .bj_bank::before {
+  content: '';
+  background: url('../../images/beijingyinhang2x.png') no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: -11px;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  margin: 11px;
+}
+.card_info .cardh {
+  font-size: 15px;
+  letter-spacing: 0.05px;
+  position: absolute;
+  right: 14.5px;
+  bottom: 13px;
+  z-index: 9999;
+}
+.card_gh::after {
+  content: '';
+  background: url('../../images/gongshang@2x.png') no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 123px;
+  height: 107px;
+}
+.bank_panle {
+  width: auto;
+  height: 124.5px;
+  margin: 10px 15px;
+  background: #FFF;
+  border-radius: 8px;
+  border: 1px solid #DEDEDF;
+  color: #222;
+}
+.bank_panle .bank_title {
+  line-height: 28.5px;
+  font-size: 12px;
+  color: #FFF;
+  padding-left: 8.5px;
+  background: #4C585C;
+  border-radius: 7px 7px 0 0;
+}
+.bank_panle .bank_xe {
+  padding: 18px 11.5px 0 15.5px;
+  font-size: 15px;
+  color: #343434;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-group {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding: 0 10px;
+}
+.btn-group .d_btn {
+  width: 100%;
+  font-size: 16px;
+  display: block;
+  margin-top: 7px;
+  line-height: 48px;
+  height: 48px;
+  background: #FFF;
+  border: none;
+}
+.btn-group .d_btn:first-child {
+  color: #E51E43;
 }
