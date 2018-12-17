@@ -1491,3 +1491,17 @@ button {
   height: 36px;
   margin: 11px;
 }
+.mui-input-row label {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  line-height: 1.1;
+  float: left;
+  width: 24%;
+  padding: 11px 0;
+}
+.mui-input-row label ~ input {
+  float: right;
+  width: 76%;
+  margin-bottom: 0;
+  padding-left: 0;
+  border: 0;
+}
