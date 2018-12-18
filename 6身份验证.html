@@ -119,7 +119,7 @@ color: #F35545;
                     <!-- <input name="checkbox1" type="checkbox"> -->
                     <!-- <input name="checkbox" value="Item 1" type="checkbox"> -->
                     <img src="./images/iocn_weitongyi@2x.png" alt="">
-                    <label class="lr_0">同意<span class="red_ED6253">《用户协议》《银行签约协议》《快捷支付协议》</span></label>
+                    <label class="lr_0"><span class="agree">同意</span> <span class="red_ED6253">《用户协议》《银行签约协议》《快捷支付协议》</span></label>
                     <!-- </span> -->
                 </div>
                 <div class="fill-20"></div>
@@ -143,14 +143,14 @@ color: #F35545;
             mui.alert('银行卡预留手机号是在银行办卡时填写的手机号， 若遗忘、 换号可联 系银行客服电话处理 ', '手机号说明 ', '我知道了', function () {});
         });
         var flag = true
-        $$(".addCard_tyxx").on("tap", function () {
+        $$(".agree").on("tap", function () {
             var imgUrl0 = "./images/iocn_weitongyi@2x.png"
             var imgUrl1 = "./images/icon_tongyi@2x.png"
             if (flag) {
-                $$(this).find("img").attr("src", imgUrl1)
+                $$(".addCard_tyxx").find("img").attr("src", imgUrl1)
                 flag = false
             } else if (!flag) {
-                $$(this).find("img").attr("src", imgUrl0)
+                $$(".addCard_tyxx").find("img").attr("src", imgUrl0)
                 flag = true
             }
         })
