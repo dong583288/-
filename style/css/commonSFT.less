@@ -206,7 +206,7 @@ body {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    font-family: 'Arial', Helvetica, Arial, "Microsoft Yahei", sans-serif;
+    font-family: 'PingFangSC-Regular', 'Arial', Helvetica, Arial, "Microsoft Yahei", "Helvetica Neue", sans-serif;
     background-color: @white;
 }
 
@@ -1316,9 +1316,11 @@ button {
 
 .bankInfo {
     display: flex;
-    span:nth-of-type(1) {
-        font-family: PingFangSC-Medium;
+    span {
+        font-family: 'PingFangSC-Medium';
         font-size: @font-15;
+    }
+    span:nth-of-type(1) {
         color: @black_222;
         width: 24%;
         display: inline-block;
@@ -1395,39 +1397,7 @@ button {
             letter-spacing: 0.04px;
         }
     }
-    .gh_bank::before {
-        content: '';
-        background: url('../../images/gongshangyinhang.png') no-repeat;
-        background-size: 100% 100%;
-        position: absolute;
-        top: -11px;
-        left: 0;
-        width: 36px;
-        height: 36px;
-        margin: 11px;
-    }
-    .js_bank::before {
-        content: '';
-        background: url('../../images/jiansheyinhang2x.png') no-repeat;
-        background-size: 100% 100%;
-        position: absolute;
-        top: -11px;
-        left: 0;
-        width: 36px;
-        height: 36px;
-        margin: 11px;
-    }
-    .bj_bank::before {
-        content: '';
-        background: url('../../images/beijingyinhang2x.png') no-repeat;
-        background-size: 100% 100%;
-        position: absolute;
-        top: -11px;
-        left: 0;
-        width: 36px;
-        height: 36px;
-        margin: 11px;
-    }
+
     .cardh {
         font-size: 15px;
         letter-spacing: 0.05px;
@@ -1437,16 +1407,24 @@ button {
         z-index: 9999;
     }
 }
+.cardItems {
+    overflow: hidden;
+}
+.card_info .BigImg {
+    width: 123px;
+    height: 102%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 
-.card_gh::after {
-    content: '';
-    background: url('../../images/gongshang@2x.png') no-repeat;
-    background-size: 100% 100%;
+.card_info .smallImg {
     position: absolute;
     top: 0;
-    right: 0;
-    width: 123px;
-    height: 107px;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    margin: 11px;
 }
 
 .bank_panle {
@@ -1753,7 +1731,7 @@ button {
 }
 
 .mui-input-row label {
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'PingFangSC-Medium';
     line-height: 1.1;
     float: left;
     width: 24%;
@@ -1767,4 +1745,6 @@ button {
     margin-bottom: 0;
     padding-left: 0;
     border: 0;
+    font-family: 'PingFangSC-Medium';
+    font-size: @font-15;
 }
