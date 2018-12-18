@@ -228,10 +228,10 @@ button:enabled:active {
     border-radius: 8px;
     font-size: 18px; // padding: 10px 130px !important;
     padding-top: 12px !important;
-    padding-bottom: 12px !important;
-    width: 335px;
+    padding-bottom: 12px !important; // width: 335px;
     color: @white; // width: auto !important;
-    margin: 0 auto;
+    margin: 4% auto;
+    width: 92%;
 }
 
 .btn_red:active {
@@ -244,10 +244,10 @@ button:enabled:active {
     border-radius: 8px;
     font-size: 18px; // padding: 10px 130px !important;
     padding-top: 12px !important;
-    padding-bottom: 12px !important;
-    width: 335px;
+    padding-bottom: 12px !important; // width: 335px;
     color: @white; // width: auto !important;
-    margin: 0 auto;
+    margin: 4% auto;
+    width: 92%;
 }
 
 .btn_red_gray:active {
@@ -933,6 +933,68 @@ button {
     }
 }
 
+// xr xsMax
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-min-device-pixel-ratio:2) {
+    .mui-scroll-wrapper {
+        padding-top: 0;
+    }
+    .mui-content {
+        padding-top: 0;
+    }
+    header {
+        height: 64px;
+        padding-top: 24px;
+        box-sizing: content-box;
+        box-shadow: 0 1px 6px #ccc;
+        border: 1px solid #D7D7D7;
+    }
+    .mui-content {
+        padding-top: 88px;
+    }
+    body {
+        /* padding-bottom: 34px; */
+    }
+    /* 密码框 */
+    .alert-password {
+        padding-bottom: 34px !important;
+        box-sizing: content-box;
+    }
+    .mui-bar-tab {
+        padding-bottom: 34px;
+    }
+    /* iframe */
+    #sytframe {
+        bottom: 34px !important;
+    }
+    /* 协议 */
+    .argument.active {
+        top: 44px;
+    }
+    .show-card-info {
+        top: 88px;
+    }
+    /* 滚动区域 */
+    .mui-scroll-wrapper {
+        top: 88px !important;
+    }
+    .mui-scroll-wrapper {
+        padding-top: 0 !important;
+    }
+    .keyboardmove_pup {
+        animation: keyboardmove 0.5s forwards;
+    }
+    @keyframes keyboardmove {
+        from {
+            bottom: -200%;
+            display: none;
+        }
+        to {
+            bottom: 44px;
+            display: block;
+        }
+    }
+}
+
 // 12_12_通用首付通------------
 // ----------公用-----------------
 .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar {
@@ -1224,13 +1286,15 @@ button {
         font-size: @font-15;
         color: #333333;
         line-height: 1;
+        display: inline-block;
+        width: 24%;
     }
     input {
         width: 64%;
         border: 0;
         margin: 0;
         padding: 0;
-        height: 100%;
+        height: 100%; // margin-left: 15px;
     }
     .bf_icon_span {
         position: relative;
@@ -1696,7 +1760,7 @@ button {
 }
 
 .mui-input-row label~input,
- {
+    {
     float: right;
     width: 76%;
     margin-bottom: 0;
