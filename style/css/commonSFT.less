@@ -1523,10 +1523,15 @@ button {
 
 .showMoney_bot {
     display: flex;
+    display: -webkit-flex;
+    -webkit-align-items: center;
     align-items: center;
+    height: 60px;
+    line-height: 60px;
     img {
         width: 34px;
         height: 45px;
+        display: block; // vertical-align: top;
     }
     .txwz_money {
         // font-family: PingFangSC-Regular;
@@ -1555,7 +1560,7 @@ button {
     justify-content: space-between;
     border-top: 1px solid #E9E9E9;
     height: 43px;
-    margin-top: 33px;
+    margin-top: 23px;
     span:nth-child(1) {
         font-family: PingFangSC-Regular;
         font-size: @font-14;
@@ -1751,10 +1756,13 @@ button {
 }
 
 .showMoney_bot>input {
-    height: 45px;
-    line-height: 45px;
+    height: 100%;
+    /* line-height: 45px; */
     padding: 0;
     padding-left: 12px;
     font-size: 50px;
-    font-family: "PingFangSC-Regular";
+    align-self: center; 
+    // font-family: "PingFangSC-Regular";
+    display: inline-block;
+    // width: 86%;
 }

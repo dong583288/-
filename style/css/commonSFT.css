@@ -1355,11 +1355,16 @@ button {
 }
 .showMoney_bot {
   display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
   align-items: center;
+  height: 60px;
+  line-height: 60px;
 }
 .showMoney_bot img {
   width: 34px;
   height: 45px;
+  display: block;
 }
 .showMoney_bot .txwz_money {
   display: inline-block;
@@ -1380,7 +1385,7 @@ button {
   justify-content: space-between;
   border-top: 1px solid #E9E9E9;
   height: 43px;
-  margin-top: 33px;
+  margin-top: 23px;
 }
 .quanbutixian span:nth-child(1) {
   font-family: PingFangSC-Regular;
@@ -1552,10 +1557,11 @@ button {
   font-size: 15px;
 }
 .showMoney_bot > input {
-  height: 45px;
-  line-height: 45px;
+  height: 100%;
+  /* line-height: 45px; */
   padding: 0;
   padding-left: 12px;
   font-size: 50px;
-  font-family: "PingFangSC-Regular";
+  align-self: center;
+  display: inline-block;
 }
