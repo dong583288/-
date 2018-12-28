@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en" class="feedback">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+    <title>银行卡</title>
+    <script src="./js/pubstyle.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="./style/css/CommonSFT.css">
+</head>
+<style>
+
+    .mui-table-view-cell:after {
+    right: 15px;
+}
+.mui-popup-button:nth-of-type(1) {
+color: #000;
+}
+.mui-popup-button:nth-of-type(2) {
+color: #F35545;
+}
+</style>
+
+<body class="bg_body_gray">
+    <div class="mask hide"></div>
+    <!-- 带返回与头部的header -->
+    <header class="mui-bar mui-bar-nav header-nav bd_1">
+        <div class="fill-20" id="fillHeader"></div>
+        <div id="closeSyt" class="mui-pull-left">
+            <span class="mui-icon iconfont icon-jiantou-xia"></span>
+        </div>
+        <h1 class="mui-title">转账汇款</h1>
+    </header>
+    <!-- 主体部分 -->
+    <main class="addbankCard gl_jbyhk mui-content">
+
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll zzjl">
+                <div class="fill-50 bg_gold huikuanTitle">
+                    <div>
+                        <span class="red_C62323">转账到首付通账户</span>
+                        <span>转账到银行卡</span>
+                    </div>
+                </div>
+                <div class="fill-30 bg_body_gray"></div>
+                <ul class="remittance_bank mui-table-view mui-table-view-chevron">
+                    <li class="mui-table-view-cell mui-media bd_b_0">
+                        <div class="mui-input-row">
+                            <label>收款方账户</label>
+                            <input type="text" value="" class="mui-input-clear font_color_222" placeholder="转账到首付通账户">
+                        </div>
+                    </li>
+
+                    <div class="fill-30 bg_body_gray zztitle">钱将实时转入对方账户，无法退款</div>
+                    <div class="showMoney">
+                        <div class="showMoney_top">转账金额</div>
+                        <div class="fill-20"></div>
+                        <div class="showMoney_bot">
+                            <img src="./img/hbfh.png" alt="">
+                            <input type="text">
+                        </div>
+                        <div class="quanbutixian ">
+                            <span>可用余额：<span>1000000.00</span>元</span>
+                        </div>
+                        <div class="mui-table-view-cell mui-media beizhu bd_b_0">
+                            <div class="mui-input-row">
+                                <label>备注</label>
+                                <input type="text" value="" class="mui-input-clear font_color_222" placeholder="选填">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fill-17 bg_body_gray"></div>
+                    <div class="hide mui-table-view-cell mui-media zzje_more bg_body_gray">
+                        <span>更多</span>
+                        <i class="mui-icon mui-icon-arrowright"></i>
+                    </div>
+
+
+                </ul>
+                <div class="fill-20"></div>
+                <button id="confirmBtn" class="btn_red mui-btn mui-btn-block">确认转账，发送手机验证码</button>
+
+            </div>
+        </div>
+
+    </main>
+</body>
+<script src="./js/mui.min.js"></script>
+<script src="./js/zepto.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    mui.ready(function () {
+        mui.init()
+        mui.init({
+            swipeBack: true //启用右滑关闭功能
+        });
+        // 弹性插件
+        mui('.mui-scroll-wrapper').scroll({
+            scrollY: true, //是否竖向滚动
+            scrollX: false, //是否横向滚动
+            startX: 0, //初始化时滚动至x
+            startY: 0, //初始化时滚动至y
+            indicators: false, //是否显示滚动条
+            deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
+            bounce: true //是否启用回弹
+        });
+    })
+    var btnArray = ['容我想想', '确认无误'];
+    mui.confirm('确认转账至13800138000（洪*玲）用户的首付通支付账户？资金将实时转入对方账户，无法退还', '', btnArray, function (e) {
+        if (e.index == 1) {
+
+        } else {
+
+        }
+    })
+</script>
+
+</html>

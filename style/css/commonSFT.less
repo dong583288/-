@@ -10,6 +10,7 @@
 @black_000: #000000;
 @black_35: #353535;
 @black_222: #222222;
+@black_333: #333333;
 @black_555: #555555;
 @gray_b2: #B2B2B2;
 @gray_B9: #B9B9B9;
@@ -51,6 +52,10 @@
 // 字体颜色
 .red_ED6253 {
     color: @red_ED6253  !important;
+}
+
+.red_C62323 {
+    color: @red_C62323  !important;
 }
 
 .gray_A0A0A0 {
@@ -112,6 +117,10 @@
     height: 15px;
 }
 
+.fill-17 {
+    height: 17px;
+}
+
 .fill-20 {
     height: 20px;
 }
@@ -146,6 +155,10 @@
 
 .bg_gray {
     background: @bg_gray_efeff4;
+}
+
+.bg_gold {
+    background: #DCBB7F;
 }
 
 .mr_20 {
@@ -749,8 +762,8 @@ button {
     left: 0;
     bottom: 0;
     width: 100%;
-    z-index: 100;
-    li {
+    z-index: 110;
+    >li {
         margin: 0;
         padding: 0;
         text-align: center;
@@ -785,6 +798,121 @@ button {
         &:nth-child(12) {
             border-right: 0 none;
             background-color: #C6CBD4;
+        }
+        &::after {
+            height: 0;
+        }
+    }
+    .longKeyBoard {
+        display: flex;
+        align-content: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        li {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            font-size: @font-20;
+            color: #000000;
+            box-sizing: border-box;
+            border: 1px solid @bd_color_E5E5E5;
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(7),
+            &:nth-child(8) {
+                border-right: 0 none;
+                border-bottom: 0;
+            }
+            &:nth-child(3),
+            &:nth-child(6),
+            &:nth-child(9),
+                {
+                border-bottom: 0;
+            }
+            &:nth-child(7),
+            &:nth-child(8),
+            &:nth-child(10),
+            &:nth-child(11) {
+                border-right: 0 none;
+            }
+            &:nth-child(10),
+            &:nth-child(12) {
+                border-right: 0 none;
+                background-color: #C6CBD4;
+            }
+            &::after {
+                height: 0;
+            }
+        }
+    }
+    .top {
+        .top_close {
+            width: 100%;
+            border-bottom: 1px solid #E2E4E9;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            span {
+                font-family: PingFangSC-Regular;
+                font-size: @font-15;
+                color: @black_222;
+                letter-spacing: 0.05px;
+            }
+            i {
+                margin-top: 17px;
+                font-size: 26px;
+                font-weight: 600;
+                margin-right: 10px;
+                color: #D8D8D8;
+            }
+        }
+        .zzhk_yzm {
+            padding: 0 4%;
+            margin-top: 40px;
+            font-size: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            li {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                border: 1px solid @gray_B9;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &+li {
+                    border-left: 0 none;
+                }
+                input {
+                    border: 0;
+                    margin: 0;
+                }
+                span {
+                    font-size: 20px;
+                }
+            }
+        }
+        .sendAgain {
+            margin-top: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 4%;
+            span {
+                font-family: 'PingFangSC-Regular';
+                font-size: @font-12;
+                letter-spacing: 0.04px;
+                color: @black_555;
+                &:nth-of-type(1) {
+                    color: #F24F3E;
+                }
+            }
         }
     }
 }
@@ -1761,8 +1889,284 @@ button {
     padding: 0;
     padding-left: 12px;
     font-size: 50px;
-    align-self: center; 
-    // font-family: "PingFangSC-Regular";
-    display: inline-block;
-    // width: 86%;
+    align-self: center; // font-family: "PingFangSC-Regular";
+    display: inline-block; // width: 86%;
+}
+
+/* 转账部分 */
+
+.zzjl {
+    >h1 {
+        font-family: 'PingFangSC-Medium';
+        font-size: 38px;
+        color: @red_C62323;
+        margin-top: 39px;
+        text-align: center;
+    }
+    >p {
+        margin-top: 8px;
+        font-family: PingFangSC-Medium;
+        font-size: @font-15;
+        color: @black_333;
+        text-align: center;
+    }
+    .czDetail {
+        margin-top: 30px;
+        li {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #E8E8E8;
+            margin-bottom: 18px;
+            span:nth-of-type(1) {
+                font-family: 'PingFangSC-Medium';
+                font-size: @font-15;
+                color: @black_333;
+            }
+            span:nth-of-type(2) {
+                font-family: 'PingFangSC-Regular';
+                font-size: @font-15;
+                color: @black_222;
+            }
+        }
+    }
+}
+
+.zzsb {
+    .successImg {
+        background-color: @white;
+        padding-bottom: 50px;
+        img {
+            width: 51px;
+            height: 51px;
+        }
+        p:nth-of-type(1) {
+            margin-top: 33px;
+        }
+        p:nth-of-type(2) {
+            margin: 0 auto;
+            margin-top: 20px;
+            font-family: 'PingFangSC-Regular';
+            font-size: @font-14;
+            color: #545454;
+            letter-spacing: 0.05px;
+            text-align: center;
+            width: 130px;
+        }
+        p.w200 {
+            width: 200px;
+        }
+    }
+}
+
+.zzjlu {
+    .mui-table-view-cell:after {
+        right: 15px;
+    }
+    .mui-table-view:after {
+        height: 1px;
+        right: 15px;
+        left: 15px;
+    }
+    .jiaoyijilu {
+        &+& {
+            margin-top: 15px;
+        }
+        span {
+            margin-right: 10px;
+        }
+    }
+}
+
+.sideBar_left {
+    >div {
+        &:nth-of-type(1) {
+            margin-top: 75px;
+            padding-bottom: 13px;
+            border-bottom: 1px solid #EFEFEF;
+            padding-left: 13px;
+            font-family: 'PingFangSC-Regular';
+            font-size: @font-15;
+            color: @black_222;
+        }
+    }
+    >p {
+        font-family: 'PingFangSC-Regular';
+        font-size: @font-15;
+        color: @black_222;
+        padding-left: 13px;
+        margin-top: 20px;
+    }
+    .dateBox {
+        margin: 0 4%;
+        width: 92%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        margin-top: 18px;
+        span {
+            width: 94px;
+            padding: 3px 0;
+            font-family: 'PingFangSC-Regular';
+            font-size: @font-15;
+            color: @red_C62323;
+            margin-bottom: 20px;
+            border: 1px solid #C62323;
+            border-radius: 4px;
+            text-align: center;
+        }
+    }
+}
+
+.canvas_active {
+    color: #FFFFFF !important;
+    background-color: @red_C62323  !important;
+}
+
+.huikuanTitle {
+    position: relative;
+    >div {
+        box-shadow: 0 2px 4px 0 rgba(83, 83, 83, 0.34);
+        border-radius: 4px;
+        position: absolute;
+        width: 92%; // margin: 0 4%;
+        background-color: @white;
+        top: 25px;
+        left: 4%;
+        right: 4%;
+        span {
+            display: inline-block;
+            width: 49%;
+            padding: 13px 0;
+            text-align: center;
+            &:nth-of-type(1) {
+                border-right: 1px solid #CECECE;
+            }
+        }
+    }
+}
+
+.remittance {
+    li {
+        >span {
+            font-family: 'PingFangSC-Regular';
+            font-size: @font-15;
+            color: @black_222;
+            letter-spacing: -0.08px;
+            text-align: center;
+            &:nth-of-type(1) {
+                margin-right: 15px;
+            }
+        }
+    }
+    .li_img {
+        img {
+            width: 21px;
+            height: 21px;
+            margin-right: 24px;
+            vertical-align: -5px;
+        }
+        span {
+            margin-right: 0;
+        }
+        i {
+            float: right;
+            margin-right: 3%;
+            float: right;
+            margin-right: 3%;
+            color: #575757;
+            font-size: 26px;
+        }
+        &:after {
+            right: 0 !important;
+            left: 0 !important;
+        }
+    }
+}
+
+.remittance_bank {
+    .li_arrow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:after {
+            right: 0 !important;
+            left: 0 !important;
+        }
+        div {
+            padding-right: 3%;
+            span {
+                font-family: 'PingFangSC-Regular';
+                font-size: @font-15;
+                color: #8D8D8D;
+                letter-spacing: -0.08px;
+                text-align: center;
+            }
+        }
+    }
+    .showMoney {
+        .quanbutixian span {
+            font-family: 'PingFangSC-Regular';
+            font-size: @font-15;
+            color: #202020 !important;
+            letter-spacing: 0.05px;
+        }
+        input {
+            margin-bottom: 0;
+            border: 0;
+        }
+    }
+}
+
+.bd_b_0::after {
+    height: 0 !important;
+}
+
+.moneyTitle {
+    font-family: 'PingFangSC-Regular';
+    font-size: 13px;
+    color: @black_222;
+    letter-spacing: 0.04px;
+    height: 42px;
+    line-height: 42px;
+    padding-left: 4%;
+    background: #EaEaEa;
+    position: relative;
+    i {
+        position: absolute;
+        left: 7%;
+        top: -8px;
+        font-size: 0;
+        line-height: 0;
+        border-width: 8px;
+        border-color: #EaEaEa;
+        border-top-width: 0;
+        border-style: dashed;
+        border-bottom-style: solid;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+}
+
+.moneyItem:after {
+    height: 0px; // background: #EDEDED;
+}
+
+.zzje_more {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5% !important;
+}
+
+.zztitle {
+    font-family: 'PingFangSC-Regular';
+    font-size: @font-12;
+    color: @black_555;
+    line-height: 30px;
+    padding-left: 4%;
+}
+
+.beizhu {
+    display: flex;
 }

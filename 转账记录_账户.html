@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en" class="feedback">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+    <title>银行卡</title>
+    <script src="./js/pubstyle.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="./style/css/CommonSFT.css">
+</head>
+<style>
+    .mui-scroll {
+    background-color: #fff;
+}
+.mui-scroll-wrapper {
+padding-top: 71px;
+}
+</style>
+
+<body class="">
+    <div class="mask hide"></div>
+    <!-- 带返回与头部的header -->
+    <header class="mui-bar mui-bar-nav header-nav bd_1">
+        <div class="fill-20" id="fillHeader"></div>
+        <div id="closeSyt" class="mui-pull-left">
+            <span class="mui-icon iconfont icon-jiantou-xia"></span>
+        </div>
+        <h1 class="mui-title">转账记录</h1>
+    </header>
+    <!-- 主体部分 -->
+    <main class="addbankCard gl_jbyhk mui-content">
+
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll zzjl">
+                <h1>-¥5000.00</h1>
+                <p>交易成功</p>
+                <ul class="czDetail">
+                    <li>
+                        <span>收款方账号</span>
+                        <span>138****0000</span>
+                    </li>
+                    <li>
+                        <span>对方姓名</span>
+                        <span>洪玲玲</span>
+                    </li>
+                    <li>
+                        <span>转账金额</span>
+                        <span>10000.00元</span>
+                    </li>
+                    <li>
+                        <span>手续费</span>
+                        <span>10.00元</span>
+                    </li>
+                    <li>
+                        <span>备注</span>
+                        <span>无</span>
+                    </li>
+                    <li>
+                        <span>创建时间</span>
+                        <span>2018/12/17 16:30:26</span>
+                    </li>
+                    <li>
+                        <span>订单编号</span>
+                        <span>1987654321456789187654</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</body>
+<script src="./js/mui.min.js"></script>
+<script src="./js/zepto.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    mui.ready(function () {
+        mui.init()
+        mui.init({
+            swipeBack: true //启用右滑关闭功能
+        });
+        // 弹性插件
+        mui('.mui-scroll-wrapper').scroll({
+            scrollY: true, //是否竖向滚动
+            scrollX: false, //是否横向滚动
+            startX: 0, //初始化时滚动至x
+            startY: 0, //初始化时滚动至y
+            indicators: false, //是否显示滚动条
+            deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
+            bounce: true //是否启用回弹
+        });
+    })
+    $$(".sendCode").on("tap", function () {
+        $$(this).siblings(".gray_A0A0A0").removeClass("hide")
+    })
+    
+</script>
+
+</html>

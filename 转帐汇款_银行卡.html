@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en" class="feedback">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+    <title>银行卡</title>
+    <script src="./js/pubstyle.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="./style/css/CommonSFT.css">
+</head>
+<style>
+
+    .mui-table-view-cell:after {
+    right: 15px;
+}
+
+</style>
+
+<body class="bg_body_gray">
+    <div class="mask hide"></div>
+    <!-- 带返回与头部的header -->
+    <header class="mui-bar mui-bar-nav header-nav bd_1">
+        <div class="fill-20" id="fillHeader"></div>
+        <div id="closeSyt" class="mui-pull-left">
+            <span class="mui-icon iconfont icon-jiantou-xia"></span>
+        </div>
+        <h1 class="mui-title">转账汇款</h1>
+    </header>
+    <!-- 主体部分 -->
+    <main class="addbankCard gl_jbyhk mui-content">
+
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll zzjl">
+                <div class="fill-50 bg_gold huikuanTitle">
+                    <div>
+                        <span>转账到账户</span>
+                        <span class="red_C62323">转账到银行卡</span>
+                    </div>
+                </div>
+                <div class="fill-30 bg_body_gray"></div>
+                <ul class="remittance_bank mui-table-view mui-table-view-chevron">
+                    <li class="mui-table-view-cell mui-media ">
+                        <div class="mui-input-row">
+                            <label>收款方姓名</label>
+                            <input type="text" value="" class="mui-input-clear font_color_222" placeholder="请输入收款人姓名">
+                        </div>
+                    </li>
+                    <li class="mui-table-view-cell mui-media">
+                        <div class="mui-input-row">
+                            <label>卡号</label>
+                            <input type="text" value="6227 0021 9256 4082 720" class="mui-input-clear font_color_222"
+                                placeholder="请输入收款人卡号">
+                        </div>
+                    </li>
+                    <li class="mui-table-view-cell mui-media li_arrow">
+                        <span>银行</span>
+                        <div>
+                            <span>请选择银行</span>
+                            <i class="mui-icon mui-icon-arrowright"></i>
+                        </div>
+                    </li>
+
+                    <div class="fill-17 bg_body_gray">
+
+                    </div>
+                    <li class="mui-table-view-cell mui-media moneyItem">
+                        <span>金额</span>
+                        <span></span>
+                    </li>
+                    <div class="moneyTitle ">
+                        <i></i>
+                        <span>转账金额（收取0.1%的服务费）</span>
+                    </div>
+                    <div class="fill-17 bg_body_gray"></div>
+                    <div class="mui-table-view-cell mui-media zzje_more bg_body_gray">
+                        <span>更多</span>
+                        <i class="mui-icon mui-icon-arrowright"></i>
+                    </div>
+
+
+                </ul>
+                <div class="fill-20"></div>
+                <button id="confirmBtn" class="btn_red mui-btn mui-btn-block">下一步</button>
+
+            </div>
+        </div>
+
+    </main>
+</body>
+<script src="./js/mui.min.js"></script>
+<script src="./js/zepto.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    mui.ready(function () {
+        mui.init()
+        mui.init({
+            swipeBack: true //启用右滑关闭功能
+        });
+        // 弹性插件
+        mui('.mui-scroll-wrapper').scroll({
+            scrollY: true, //是否竖向滚动
+            scrollX: false, //是否横向滚动
+            startX: 0, //初始化时滚动至x
+            startY: 0, //初始化时滚动至y
+            indicators: false, //是否显示滚动条
+            deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
+            bounce: true //是否启用回弹
+        });
+    })
+</script>
+
+</html>
