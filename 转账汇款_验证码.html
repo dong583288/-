@@ -22,7 +22,7 @@ color: #F35545;
 </style>
 
 <body class="bg_body_gray">
-    <div class="mask "></div>
+    <div class="mask hide"></div>
     <!-- 带返回与头部的header -->
     <header class="mui-bar mui-bar-nav header-nav bd_1">
         <div class="fill-20" id="fillHeader"></div>
@@ -87,27 +87,16 @@ color: #F35545;
             <div class="top">
                 <div class="top_close">
                     <span>已发送验证码至183****7353</span>
-                    <i class="mui-icon mui-icon-closeempty mui-pull-right"></i>
+                    <i class="mui-icon mui-icon-closeempty mui-pull-right closeKeyBoard"></i>
                 </div>
                 <ul class="zzhk_yzm">
-                    <li>
-                        <input type="number" maxlength="1" value="">
-                    </li>
-                    <li>
-                        <input type="number" maxlength="1" value="">
-                    </li>
-                    <li>
-                        <input type="number" maxlength="1" value="">
-                    </li>
-                    <li>
-                        <input type="number" maxlength="1" value="">
-                    </li>
-                    <li>
-                        <input type="number" maxlength="1" value="">
-                    </li>
-                    <li>
-                        <input type="number" maxlength="1" value="">
-                    </li>
+                    <input type="number" min="000000" max="999999" id="code" value="">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
                 </ul>
                 <div class="sendAgain">
                     <span>收不到验证码？</span>
@@ -116,42 +105,42 @@ color: #F35545;
                 <div class="fill-30"></div>
             </div>
             <ul class="longKeyBoard">
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
+                    1
+                </li>
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
+                    2
+                </li>
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
+                    3
+                </li>
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
+                    4
+                </li>
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
+                    5
+                </li>
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
+                    6
+                </li>
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
+                    7
+                </li>
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
+                    8
+                </li>
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
+                    9
+                </li>
                 <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
-                1
-            </li>
-            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
-                2
-            </li>
-            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
-                3
-            </li>
-            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
-                4
-            </li>
-            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
-                5
-            </li>
-            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
-                6
-            </li>
-            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
-                7
-            </li>
-            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
-                8
-            </li>
-            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
-                9
-            </li>
-            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
-                +&nbsp;*&nbsp;#
-            </li>
-            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
-                0
-            </li>
-            <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
-                <span class="mui-icon mui-icon-close"></span>
-            </li>
+                    +&nbsp;*&nbsp;#
+                </li>
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
+                    0
+                </li>
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 close">
+                    <span class="mui-icon mui-icon-close"></span>
+                </li>
             </ul>
         </ul>
 
@@ -176,6 +165,50 @@ color: #F35545;
             bounce: true //是否启用回弹
         });
     })
+    setTimeout(() => {
+        $$(".mask").removeClass("hide")
+        $$(".keyboard").addClass("animate_keyboard")
+    }, 200);
+    keyBoard()
+
+    function keyBoard() {
+        var val = []
+        var n = 0
+        $$(".longKeyBoard").on("tap", ".num", function (e) {
+            e.stopPropagation();
+            n++
+            if (n < 7) {
+                $$(".zzhk_yzm li").eq(n - 1).text($$(this).text())
+                val.push($$(this).text() - 0)
+                if (n === 6) {
+                    $$("#code").val(val.join("") - 0)
+                }
+            } else {
+                n = 6
+            }
+        })
+
+        $$(".close").on("tap", function (e) {
+            e.stopPropagation();
+            n--
+            n = n <= 0 ? 0 : n
+            console.log(n);
+            val.pop()
+            $$(".zzhk_yzm li").eq(n).text('')
+            if (n === 6) {
+                $$("#code").val(val.join("") - 0)
+            }
+        })
+
+        $$(".closeKeyBoard").on("tap",function () {
+            $$(".mask").addClass("hide")
+            $$(".keyboard").removeClass("animate_keyboard")
+        })
+    }
+
+
+
+
     /* var btnArray = ['容我想想', '确认无误'];
     mui.confirm('确认转账至13800138000（洪*玲）用户的首付通支付账户？资金将实时转入对方账户，无法退还', '', btnArray, function (e) {
         if (e.index == 1) {
