@@ -83,66 +83,28 @@ color: #F35545;
             </div>
         </div>
 
-        <ul class="mui-table-view mui-table-view-chevron mui-row keyboard ">
-            <div class="top">
-                <div class="top_close">
-                    <span>已发送验证码至183****7353</span>
-                    <i class="mui-icon mui-icon-closeempty mui-pull-right closeKeyBoard"></i>
-                </div>
-                <ul class="zzhk_yzm">
-                    <input type="number" min="000000" max="999999" id="code" value="">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <div class="sendAgain">
-                    <span>收不到验证码？</span>
-                    <span>重新发送（17s）</span>
-                </div>
-                <div class="fill-30"></div>
+        <div class="confirm ">
+            <div class="top_close">
+                <span>确认提现</span>
+                <i class="mui-icon mui-icon-closeempty mui-pull-right closeConfirm"></i>
             </div>
-            <ul class="longKeyBoard">
-                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
-                    1
+            <ul>
+                <li>
+                    <span>服务费</span>
+                    <span>-¥ 10.00</span>
                 </li>
-                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
-                    2
+                <li>
+                    <span>优惠</span>
+                    <span>¥ 5.00</span>
                 </li>
-                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
-                    3
-                </li>
-                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
-                    4
-                </li>
-                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
-                    5
-                </li>
-                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
-                    6
-                </li>
-                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
-                    7
-                </li>
-                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
-                    8
-                </li>
-                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
-                    9
-                </li>
-                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
-                    +&nbsp;*&nbsp;#
-                </li>
-                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
-                    0
-                </li>
-                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 close">
-                    <span class="mui-icon mui-icon-close"></span>
+                <li>
+                    <span>提现金额</span>
+                    <span>¥ 10000.00</span>
                 </li>
             </ul>
-        </ul>
+            <div class="fill-100"></div>
+            <button id="confirmBtn" class="btn_red mui-btn mui-btn-block">确认提现</button>
+        </div>
 
     </main>
 </body>
@@ -168,8 +130,15 @@ color: #F35545;
     // 键盘部分js仅供参考,可只用样式,删掉js
     setTimeout(() => {
         $$(".mask").removeClass("hide")
-        $$(".keyboard").addClass("animate_keyboard")
+        $$(".confirm").addClass("animate_keyboard")
     }, 200);
+
+$$(".closeConfirm").on("tap",function () {
+    $$(".mask").addClass("hide")
+$$(".confirm").removeClass("animate_keyboard")
+})
+
+
     keyBoard()
 
     function keyBoard() {
@@ -201,7 +170,7 @@ color: #F35545;
             }
         })
 
-        $$(".closeKeyBoard").on("tap",function () {
+        $$(".closeKeyBoard").on("tap", function () {
             $$(".mask").addClass("hide")
             $$(".keyboard").removeClass("animate_keyboard")
         })
