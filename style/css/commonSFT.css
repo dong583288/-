@@ -1974,6 +1974,25 @@ button {
   margin-bottom: 0;
   border: 0;
 }
+.remittance_bank .li_img img {
+  width: 21px;
+  height: 21px;
+  margin-right: 24px;
+  vertical-align: -5px;
+}
+.remittance_bank .li_img span {
+  margin-right: 0;
+}
+.remittance_bank .li_img i {
+  float: right;
+  margin-right: 3%;
+  color: #575757;
+  font-size: 26px;
+}
+.remittance_bank .li_img:after {
+  right: 0 !important;
+  left: 0 !important;
+}
 .bd_b_0::after {
   height: 0 !important;
 }
