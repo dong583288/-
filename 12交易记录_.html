@@ -57,13 +57,29 @@
             transform: scaleY(.5);
             background-color: #c8c7cc;
         }
-.mui-slider-group {
-    height: 100%!important;
-}
+
+        .mui-slider-group {
+            height: 100% !important;
+        }
+
         .mui-control-content {
-    background-color: white;
-    min-height: 50%!important;
-}
+            background-color: white;
+            min-height: 50% !important;
+        }
+
+        .mui-scroll {
+            /* height: 100%; */
+        }
+
+        @media only screen and (-webkit-device-pixel-ratio: 3) and (device-height: 812px) and (device-width: 375px) {
+            .mui-content {
+                padding-top: 88px !important;
+            }
+
+            .mui-scroll-wrapper {
+                top: 0 !important;
+            }
+        }
     </style>
     <!-- 带返回与头部的header -->
     <header class="mui-bar mui-bar-nav header-nav bd_1">
@@ -91,9 +107,9 @@
             <div class="fill-20 bg_gray"></div>
             <div class="mui-slider-group">
                 <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
-                    <div id="scroll1" class="mui-scroll-wrapper">
+                    <div id="refreshContainer" class="mui-scroll-wrapper">
                         <div class="mui-scroll">
-                            <ul class="cj_list mui-table-view mui-table-view-chevron">
+                            <ul class="cj_list mui-table-view mui-table-view-chevron"  id="list">
                                 <li class="mui-table-view-cell mui-media jiaoyijilu">
                                     <div class="item_lf">
                                         <img src="./img/cz.png" alt="">
@@ -134,86 +150,698 @@
                                     </div>
                                     <span class="item_rt">+200</span>
                                 </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/tk.png" alt="">
+                                        <div>
+                                            <span>退款</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/tk.png" alt="">
+                                        <div>
+                                            <span>退款</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/tk.png" alt="">
+                                        <div>
+                                            <span>退款</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/tk.png" alt="">
+                                        <div>
+                                            <span>退款</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/tk.png" alt="">
+                                        <div>
+                                            <span>退款</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/tk.png" alt="">
+                                        <div>
+                                            <span>退款</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
 
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div id="item2mobile" class="mui-slider-item mui-control-content">
-                    <!-- <div id="scroll2" class="mui-scroll-wrapper">
+                    <div id="scroll2" class="mui-scroll-wrapper">
                         <div class="mui-scroll">
-                            <div class="mui-loading">
+                            <!-- <div class="mui-loading">
                                 <div class="mui-spinner">
                                 </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <ul class="cj_list mui-table-view mui-table-view-chevron">
-                        <li class="mui-table-view-cell mui-media jiaoyijilu">
-                            <div class="item_lf">
-                                <img src="./img/cz.png" alt="">
-                                <div>
-                                    <span>充值-生日管家</span>
-                                    <span>2017-1-12 12:18:18</span>
-                                </div>
-                            </div>
-                            <span class="item_rt">+200</span>
-                        </li>
-                        <li class="mui-table-view-cell mui-media jiaoyijilu">
-                            <div class="item_lf">
-                                <img src="./img/xf.png" alt="">
-                                <div>
-                                    <span>提现-斗鱼直播</span>
-                                    <span>2017-1-12 12:18:18</span>
-                                </div>
-                            </div>
-                            <span class="item_rt">-200</span>
-                        </li>
-                        <li class="mui-table-view-cell mui-media jiaoyijilu">
-                            <div class="item_lf">
-                                <img src="./img/xf.png" alt="">
-                                <div>
-                                    <span>提现-斗鱼直播</span>
-                                    <span>2017-1-12 12:18:18</span>
-                                </div>
-                            </div>
-                            <span class="item_rt">-200</span>
-                        </li>
+                            </div> -->
+                            <ul class="cj_list mui-table-view mui-table-view-chevron">
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
 
-                    </ul>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
                 <div id="item3mobile" class="mui-slider-item mui-control-content">
-                    <!-- <div id="scroll3" class="mui-scroll-wrapper">
+                    <div id="scroll3" class="mui-scroll-wrapper">
                         <div class="mui-scroll">
-                            <div class="mui-loading">
+                            <!-- <div class="mui-loading">
                                 <div class="mui-spinner">
                                 </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <ul class="cj_list mui-table-view mui-table-view-chevron">
-                        <li class="mui-table-view-cell mui-media jiaoyijilu">
-                            <div class="item_lf">
-                                <img src="./img/cz.png" alt="">
-                                <div>
-                                    <span>充值-生日管家</span>
-                                    <span>2017-1-12 12:18:18</span>
-                                </div>
-                            </div>
-                            <span class="item_rt">+200</span>
-                        </li>
-                        <li class="mui-table-view-cell mui-media jiaoyijilu">
-                            <div class="item_lf">
-                                <img src="./img/xf.png" alt="">
-                                <div>
-                                    <span>提现-斗鱼直播</span>
-                                    <span>2017-1-12 12:18:18</span>
-                                </div>
-                            </div>
-                            <span class="item_rt">-200</span>
-                        </li>
+                            </div> -->
+                            <ul class="cj_list mui-table-view mui-table-view-chevron">
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/cz.png" alt="">
+                                        <div>
+                                            <span>充值-生日管家</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">+200</span>
+                                </li>
+                                <li class="mui-table-view-cell mui-media jiaoyijilu">
+                                    <div class="item_lf">
+                                        <img src="./img/xf.png" alt="">
+                                        <div>
+                                            <span>提现-斗鱼直播</span>
+                                            <span>2017-1-12 12:18:18</span>
+                                        </div>
+                                    </div>
+                                    <span class="item_rt">-200</span>
+                                </li>
 
-                    </ul>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -222,6 +850,98 @@
     <script src="./js/mui.min.js"></script>
     <script src="./js/zepto.min.js"></script>
     <script>
+        // 获取可滚动区域高度
+        function getHeight() {
+            var scrollHeight = $$('body').height() - $$('header').height() - 58
+            console.log(scrollHeight);
+            $$('.mui-slider-group').css('height', scrollHeight + 'px!important')
+        }
+        getHeight() //每次进入页面必须执行
+
+        var pager = {}; //分页
+        var totalPage; //总页码
+        pullRefresh(pager); //启用上拉下拉 
+        function pullRefresh() {
+            mui("#refreshContainer").pullRefresh({
+                up: {
+                    contentrefresh: "正在加载...", //可选，正在加载状态时，上拉加载控件上显示的标题内容
+                    contentnomore: '没 有 更 多 数 据 了', //可选，请求完毕若没有更多数据时显示的提醒内容；
+                    callback: function () { //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+                        window.setTimeout(function () {
+                            getData(pager);
+                        }, 500);
+                    }
+                },
+                down: {
+                    height: 50, //可选,默认50.触发下拉刷新拖动距离,
+                    auto: true, //可选,默认false.首次加载自动下拉刷新一次
+                    contentdown: "下拉可以刷新", //可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
+                    contentover: "释放立即刷新", //可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
+                    contentrefresh: "正在刷新...", //可选，正在刷新状态时，下拉刷新控件上显示的标题内容
+                    callback: function () { //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+                        window.setTimeout(function () {
+                            pager['size'] = 3; //条数
+                            pager['page'] = 1; //页码      
+                            //刷新要先清空父节点里面的子节点
+                            var f = document.getElementById("list");
+                            var childs = f.childNodes;
+                            for (var i = childs.length - 1; i >= 0; i--) {
+                                f.removeChild(childs[i]);
+                            }
+                            getData(pager);
+                        }, 500);
+                    }
+                }
+            })
+        }
+        //这个方法是负责向接口请求数据的，你可以选择你喜欢的方式，我这里是直接用的mui.ajax
+        function getData(params) {
+            mui.ajax("/article/getArticlePage", {
+                data: {
+                    "header": {
+                        "os": "wap",
+                        "app": "xxxx",
+                        "ver": 1.0
+                    },
+                    "data": params
+                },
+                dataType: 'json',
+                type: 'post',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                success: function (data) {
+                    mui('#refreshContainer').pullRefresh().endPullupToRefresh(true);
+                    //下面这坨都是在拼dom 你可以用jquery 或者是你所熟悉的angular,vue双向绑定
+                    var returnData = data.data;
+                    var element = document.getElementById("list");
+                    var para;
+                    var node;
+                    for (var i = 0; i < returnData.length; i++) {
+                        para = document.createElement("li");
+                        node = document.createTextNode(returnData[i].article_title)
+                        para.appendChild(node);
+                        element.appendChild(para);
+                    }
+
+                    //这里很重要，这里获取页码 公式：总条数/每页显示条数
+                    totalPage = data.ext % pager.size != 0 ?
+                        parseInt(data.ext / pager.size) + 1 :
+                        data.ext / pager.size;
+                    if (totalPage == pager.page) { //总页码等于当前页码，停止上拉下拉
+                        mui('#refreshContainer').pullRefresh().endPullupToRefresh(true);
+                    } else {
+                        pager.page++;
+                        mui('#refreshContainer').pullRefresh().refresh(true);
+                    }
+                },
+                error: function (xhr, type, errorThrown) {
+                    //异常处理；
+                    console.log(type);
+                }
+            })
+        }
+
         mui.init({
             swipeBack: false
         });
