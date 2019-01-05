@@ -11,13 +11,12 @@
     <!-- <link rel="stylesheet" href="./style/css/pageStyle.css"> -->
 </head>
 <style>
-    body { font-family: PingFangSC-Regular; }
+    body { font-family: 'PingFangSC-Regular'; }
     .mui-table-view-chevron .mui-table-view-cell { padding-right: 0; }
     .mui-input-row label { width: 35%; }
     .mui-table-view-cell { padding: 16px 15px; }
     .mui-table-view-cell a { font-size: 15px; }
     .mui-scroll-wrapper { padding-top: 66px; }
-    .mui-scroll { position: relative; height: 100%; }
 @media only screen and (-webkit-device-pixel-ratio: 3) and (device-height: 812px) and (device-width: 375px){
 .mui-content {
 padding-top: 0;
@@ -39,6 +38,11 @@ padding-top: 0!important;
 .mui-bar .mui-btn-link {
 color: #293D51;
 }
+.jiebang {
+    color: #C62323!important;
+    font-weight: 700!important;
+    font-size: 15px!important;
+}
 </style>
 
 <body class="bg_gray">
@@ -49,7 +53,9 @@ color: #293D51;
         <div id="closeSyt" class="mui-pull-left">
             <span class="mui-icon mui-icon-back"></span>
         </div>
-        <button type="button" class="mui-btn mui-btn-link mui-pull-right">解绑</button>
+        <button type="button" class="mui-btn mui-btn-link mui-pull-right">
+            <a href="#picture">解绑</a>
+        </button>
     </header>
     <!-- 主体部分 -->
     <main class="bw_cj mui-content">
@@ -73,24 +79,161 @@ color: #293D51;
                                 <div class="bank_xe"><span>每日限额：</span><span>¥200000</span></div>
                             </div>
                         </div>
+                        <div class="mui-col-sm-12 mui-col-xs-12">
+                            <div class="bank_panle">
+                                <div class="bank_title">银行支付限额</div>
+                                <div class="bank_xe"><span>单笔限额：</span><span>¥200000</span></div>
+                                <div class="bank_xe"><span>每日限额：</span><span>¥200000</span></div>
+                            </div>
+                        </div>
+                        <div class="mui-col-sm-12 mui-col-xs-12">
+                            <div class="bank_panle">
+                                <div class="bank_title">银行支付限额</div>
+                                <div class="bank_xe"><span>单笔限额：</span><span>¥200000</span></div>
+                                <div class="bank_xe"><span>每日限额：</span><span>¥200000</span></div>
+                            </div>
+                        </div>
+                        <div class="mui-col-sm-12 mui-col-xs-12">
+                            <div class="bank_panle">
+                                <div class="bank_title">银行支付限额</div>
+                                <div class="bank_xe"><span>单笔限额：</span><span>¥200000</span></div>
+                                <div class="bank_xe"><span>每日限额：</span><span>¥200000</span></div>
+                            </div>
+                        </div>
+                        <div class="mui-col-sm-12 mui-col-xs-12">
+                            <div class="bank_panle">
+                                <div class="bank_title">银行支付限额</div>
+                                <div class="bank_xe"><span>单笔限额：</span><span>¥200000</span></div>
+                                <div class="bank_xe"><span>每日限额：</span><span>¥200000</span></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="btn-group">
-                    <button type="button" class="mui-btn mui-btn-outlined d_btn">解绑</button>
-                    <button type="button" class="mui-btn mui-btn-outlined d_btn">取消</button>
                 </div>
             </div>
         </div>
+        <!-- 这是弹出菜单-->
+        <div id="picture" class="mui-popover mui-popover-action mui-popover-bottom">
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell jiebang">
+                    <a href="#">解绑</a>
+                </li>
+            </ul>
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                    <a href="#picture"><b>取消</b></a>
+                </li>
+            </ul>
+        </div>
+        <!-- 这是键盘 -->
+        <ul class="mui-table-view mui-table-view-chevron mui-row keyboard ">
+            <div class="top">
+                <div class="top_close">
+                    <span>已发送验证码至183****7353</span>
+                    <i class="mui-icon mui-icon-closeempty mui-pull-right closeKeyBoard"></i>
+                </div>
+                <ul class="zzhk_yzm">
+                    <input style="display: none;" type="number" min="000000" max="999999" id="code" value="">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="sendAgain">
+                    <span>收不到验证码？</span>
+                    <span>重新发送（17s）</span>
+                </div>
+                <div class="fill-30"></div>
+            </div>
+            <ul class="longKeyBoard">
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
+                    1
+                </li>
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
+                    2
+                </li>
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
+                    3
+                </li>
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
+                    4
+                </li>
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
+                    5
+                </li>
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
+                    6
+                </li>
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
+                    7
+                </li>
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
+                    8
+                </li>
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
+                    9
+                </li>
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4">
+                    +&nbsp;*&nbsp;#
+                </li>
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 num">
+                    0
+                </li>
+                <li class="mui-table-view-cell mui-col-sm-4 mui-col-xs-4 close">
+                    <span class="mui-icon mui-icon-close"></span>
+                </li>
+            </ul>
+        </ul>
     </main>
 </body>
 <script src="./js/mui.min.js"></script>
+<script src="./js/zepto.min.js"></script>
 <script type="text/javascript" charset="utf-8">
+    // 键盘
+    keyBoard()
+
+    function keyBoard() {
+        var val = []
+        var n = 0
+        $$(".longKeyBoard").on("tap", ".num", function (e) {
+            e.stopPropagation();
+            n++
+            if (n < 7) {
+                $$(".zzhk_yzm li").eq(n - 1).text($$(this).text())
+                val.push($$(this).text() - 0)
+                if (n === 6) {
+                    $$("#code").val(val.join("") - 0)
+                }
+            } else {
+                n = 6
+            }
+        })
+
+        $$(".close").on("tap", function (e) {
+            e.stopPropagation();
+            n--
+            n = n <= 0 ? 0 : n
+            console.log(n);
+            val.pop()
+            $$(".zzhk_yzm li").eq(n).text('')
+            if (n === 6) {
+                $$("#code").val(val.join("") - 0)
+            }
+        })
+
+        $$(".closeKeyBoard").on("tap", function () {
+            $$(".mask").addClass("hide")
+            $$(".keyboard").removeClass("animate_keyboard")
+        })
+    }
+
     mui.ready(function () {
         mui.init()
         mui.init({
             swipeBack: true //启用右滑关闭功能
         });
-// 弹性插件
+        // 弹性插件
         mui('.mui-scroll-wrapper').scroll({
             scrollY: true, //是否竖向滚动
             scrollX: false, //是否横向滚动
@@ -100,6 +243,27 @@ color: #293D51;
             deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
             bounce: true //是否启用回弹
         });
+
+        mui('body').on('tap', '.mui-popover-action li>a', function () {
+            var a = this,
+                parent;
+            //根据点击按钮，反推当前是哪个actionsheet
+            for (parent = a.parentNode; parent != document.body; parent = parent.parentNode) {
+                if (parent.classList.contains('mui-popover-action')) {
+                    break;
+                }
+            }
+            //关闭actionsheet
+            mui('#' + parent.id).popover('toggle');
+            // console.log(a.innerHTML);
+            if (a.innerHTML === "解绑") {
+                $$(".mask").removeClass("hide")
+                $$(".keyboard").addClass("animate_keyboard")
+            }
+
+        })
+
+
     })
 </script>
 

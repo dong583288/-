@@ -237,7 +237,7 @@ btn:enabled:active,
 button.mui-active:enabled,
 button:enabled:active {
   color: #fff;
-  background-color: #E69898 !important;
+  opacity: 0.8;
 }
 .btn_red {
   background: #C62323;
@@ -1047,6 +1047,9 @@ button {
       display: block;
     }
   }
+  .keyboard {
+    padding-bottom: 17px;
+  }
 }
 @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-min-device-pixel-ratio: 2) {
   .mui-scroll-wrapper {
@@ -1106,6 +1109,9 @@ button {
       bottom: 44px;
       display: block;
     }
+  }
+  .keyboard {
+    padding-bottom: 17px;
   }
 }
 .mui-segmented-control.mui-segmented-control-inverted ~ .mui-slider-progress-bar {
